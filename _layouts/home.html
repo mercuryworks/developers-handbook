@@ -1,0 +1,24 @@
+---
+layout: default
+---
+<article class="home">
+  <header class="band band--dark band--primary-color post--header">
+    <div class="inner band--inner">
+      <h1>{{ site.title | escape }}</h1>
+      <p>{{ site.description | escape }}</p>
+    </div>
+  </header>
+  <div class="band band--white">
+    <div class="inner band--inner">
+      <div class="row">
+        <div class="col col--md-8 col--xl-6">
+          <p class="rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+        </div>
+        <div class="col col--md-4 col--xl-6">
+          {% include table-of-contents.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+</article>
+

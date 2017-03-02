@@ -1,0 +1,52 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-family--bold;
+    font-weight: $font-weight--bold;
+    * >& {
+        &:only-child,
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+h1,
+h2,
+h3 {
+    line-height: $line-height--headings;
+    margin-top: $spacer*2;
+}
+
+h4,
+h5,
+h6 {
+    line-height: $line-height--base;
+}
+
+h1 {
+    font-size: $font-size--base*2.25; // 36px default
+}
+
+h2 {
+    font-size: $font-size--base*2; // 32px default
+}
+
+h3 {
+    font-size: $font-size--base*1.75; // 28px default
+}
+
+h4 {
+    font-size: $font-size--base*1.5; // 24px default
+}
+
+h5 {
+    font-size: $font-size--base*1.25; // 20px default
+}
+
+h6 {
+    font-size: $font-size--base; // 16px default
+}

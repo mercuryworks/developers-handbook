@@ -1,0 +1,32 @@
+.arrow {
+    @include arrow-size(5px);
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-bottom: 0;
+    vertical-align: 2px;
+}
+
+.arrow--large {
+    @include arrow-size(7px);
+}
+
+.arrow--larger {
+    @include arrow-size(9px);
+}
+
+.arrow--largest {
+    @include arrow-size(11px);
+}
+
+.arrow--white {
+    border-top-color: $white;
+}
+
+.arrow--left {
+    @include arrow-left(5px);
+}
+
+.arrow--right {
+    @include arrow-right(5px);
+}

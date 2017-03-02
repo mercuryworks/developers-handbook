@@ -1,0 +1,21 @@
+<header class="header" role="banner">
+    <div class="inner header--inner">  
+      <div class="logo">
+            <a href="{{ "/" | relative_url}}" class="logo--link" title="Back to home">
+                <img src="/assets/images/mercury-works-logo.svg" class="logo--image" alt="Mercury Works">
+            </a>
+        </div>
+        <nav class="off-canvas off-canvas--direction--right off-canvas--off--xxs margin--off">
+            <button type="button" class="button button--white button--small off-canvas--open-button off-canvas--open" aria-controls="off-canvas--menu--xxs">Menu</button>
+            <div class="off-canvas--menu" id="off-canvas--menu--xxs">
+                <button type="button" class="button button--white off-canvas--close-button off-canvas--close" aria-controls="off-canvas--menu--xxs">Close</button>
+                <a class="off-canvas--link" href="{{ "/" | relative_url}}">Home</a>
+                {% for my_page in site.pages %}
+                  {% if my_page.title %}
+                  <a class="off-canvas--link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+                  {% endif %}
+                {% endfor %}
+            </div>
+        </nav>
+    </div>
+</header>

@@ -1,0 +1,6 @@
+
+$border-width--primary: 2px; // 0, 1px, or 2px recommended
+$border-radius--primary: 0; // 0, 2px, 4px, 6px recommended
+$border-style--primary: solid;
+
+$border--primary: $border-width--primary $border-style--primary;

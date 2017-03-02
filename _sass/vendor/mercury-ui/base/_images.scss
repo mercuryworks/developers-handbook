@@ -1,0 +1,11 @@
+img {
+    width: $image-width;
+    height: $image-height;
+    max-width: $image-max-width;
+    border: $image-border;
+    vertical-align: $image-alignment;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}

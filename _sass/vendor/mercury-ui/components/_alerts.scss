@@ -1,0 +1,47 @@
+.alert {
+    padding: $spacer;
+    border: $border-width--primary $border-style--primary $gray;
+    background-color: lighten($gray--lightest, 5%);
+    border-radius: $border-radius--primary;
+    * >& {
+        &:only-child,
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+.alert--error, .alert--error-color {
+    @include alert-color($error-color, lighten($error-color, 40%));
+    .alert--link {
+        @include link($error-color, $error-color, darken($error-color,20%), $error-color);
+    }
+}
+
+.alert--warning, .alert--warning-color {
+    @include alert-color($warning-color, lighten($warning-color, 40%));
+    .alert--link {
+        @include link($warning-color, $warning-color, darken($warning-color,20%), $warning-color);
+    }
+}
+
+.alert--success, .alert--success-color {
+    @include alert-color($success-color, lighten($success-color, 40%));
+    .alert--link {
+        @include link($success-color, $success-color, darken($success-color,20%), $success-color);
+    }
+}
+
+.alert--info, .alert--info-color {
+    @include alert-color($info-color, lighten($info-color, 40%));
+    .alert--link {
+        @include link($info-color, $info-color, darken($info-color,20%), $info-color);
+    }
+}
+
+.alert--no-items {
+    display: none;
+    &:only-child {
+        display: block;
+    }
+}

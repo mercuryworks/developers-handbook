@@ -1,0 +1,58 @@
+.toolbar {
+    >* {
+        margin-top: 0;
+    }
+}
+
+.toolbar--all {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    .toolbar--column {
+        display: inline-block;
+        >* {
+            display: inline-block;
+        }
+    }
+    .toolbar--right {
+        margin-left: auto;
+    }
+}
+
+.toolbar--border {
+    border-bottom: $border-width--primary $border-style--primary $gray--lightest;
+    padding-bottom: $spacer*.5;
+}
+
+.toolbar--column {
+    display: inline;
+    >* {
+        margin-top: 0;
+        margin-bottom: $spacer*.5;
+        display: block;
+    }
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .toolbar--#{$breakpoint} {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            .toolbar--column {
+                display: inline-block;
+                >* {
+                    display: inline-block;
+                }
+            }
+            .toolbar--right {
+                margin-left: auto;
+            }
+        }
+        .toolbar--border--#{$breakpoint} {
+            border-bottom: $border-width--primary $border-style--primary $gray--lightest;
+            padding-bottom: $spacer*.5;
+        }
+    }
+}

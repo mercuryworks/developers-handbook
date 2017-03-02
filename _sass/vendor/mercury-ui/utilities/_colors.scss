@@ -1,0 +1,42 @@
+// Colors maps are located in /maps/_colors.scss
+@each $name,
+$color in $grays-all {
+    .color--#{$name} {
+        color: $color;
+    }
+}
+
+@each $name,
+$color in $state-colors {
+    .color--#{$name} {
+        color: $color;
+    }
+}
+
+@each $name,
+$color in $brand-colors {
+    .color--#{$name} {
+        color: $color;
+    }
+}
+
+@each $name,
+$color in $grays-all {
+    .background-color--#{$name} {
+        background-color: $color;
+    }
+}
+
+@each $name,
+$color in $state-colors {
+    .background-color--#{$name} {
+        background-color: $color;
+    }
+}
+
+@each $name,
+$color in $brand-colors {
+    .background-color--#{$name} {
+        background-color: $color;
+    }
+}

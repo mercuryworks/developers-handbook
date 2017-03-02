@@ -1,0 +1,95 @@
+
+// Neutral colors
+$white: #fff;
+$black: #000;
+
+$gray: #888;
+$gray--light: lighten($gray,10%);
+$gray--lighter: lighten($gray,20%);
+$gray--lightest: lighten($gray,35%);
+$gray--dark: darken($gray,10%);
+$gray--darker: darken($gray,20%);
+$gray--darkest: darken($gray,30%);
+
+// Brand colors
+$m-blue: #0d5cab;
+$m-blue--light: lighten($m-blue,10%);
+$m-blue--lighter: lighten($m-blue,20%);
+$m-blue--lightest: lighten($m-blue,30%);
+$m-blue--dark: darken($m-blue,10%);
+$m-blue--darker: darken($m-blue,20%);
+$m-blue--darkest: darken($m-blue,30%);
+
+$m-green: #72c267;
+$m-green--light: lighten($m-green,10%);
+$m-green--lighter: lighten($m-green,20%);
+$m-green--lightest: lighten($m-green,30%);
+$m-green--dark: darken($m-green,10%);
+$m-green--darker: darken($m-green,20%);
+$m-green--darkest: darken($m-green,30%);
+
+$m-bright-blue: #168dde;
+$m-bright-blue--light: lighten($m-bright-blue,10%);
+$m-bright-blue--lighter: lighten($m-bright-blue,20%);
+$m-bright-blue--lightest: lighten($m-bright-blue,30%);
+$m-bright-blue--dark: darken($m-bright-blue,10%);
+$m-bright-blue--darker: darken($m-bright-blue,20%);
+$m-bright-blue--darkest: darken($m-bright-blue,30%);
+
+$red: #e22f2f;
+$yellow: #ffa011;
+$green: #47c14b;
+$blue: #43a2cc;
+
+// Primary brand color
+$primary-color: $m-blue;
+$primary-color--light: $m-blue--light;
+$primary-color--lighter: $m-blue--lighter;
+$primary-color--lightest: $m-blue--lightest;
+$primary-color--dark: $m-blue--dark;
+$primary-color--darker: $m-blue--darker;
+$primary-color--darkest: $m-blue--darkest;
+$primary-color--inverse: $white;
+
+// Secondary brand color
+$secondary-color: $m-green;
+$secondary-color--light: $m-green--light;
+$secondary-color--lighter: $m-green--lighter;
+$secondary-color--lightest: $m-green--lightest;
+$secondary-color--dark: $m-green--dark;
+$secondary-color--darker: $m-green--darker;
+$secondary-color--darkest: $m-green--darkest;
+$secondary-color--inverse: $white;
+
+// Tertiary brand color
+$tertiary-color: $m-bright-blue;
+$tertiary-color--light: $m-bright-blue--light;
+$tertiary-color--lighter: $m-bright-blue--lighter;
+$tertiary-color--lightest: $m-bright-blue--lightest;
+$tertiary-color--dark: $m-bright-blue--dark;
+$tertiary-color--darker: $m-bright-blue--darker;
+$tertiary-color--darkest: $m-bright-blue--darkest;
+$tertiary-color--inverse: $white;
+
+// State colors
+$error-color: $red;
+$warning-color: $yellow;
+$success-color: $green;
+$info-color: $blue;
+
+// Default colors
+$color--default: $black;
+$color--inverse--default: $white;
+$background-color--default: $primary-color;
+$content-background-color--default: $color--inverse--default;
+$link-color--default: $primary-color--light;
+$link-hover-color--default: $primary-color--darkest;
+$link-visited-color--default: $link-color--default;
+$link-active-color--default: $primary-color--lighter;
+
+// Html
+$html-tap-highlight-color: rgba($black,0);
+
+// Body
+$body-color: $color--default;
+$body-background-color: $background-color--default;

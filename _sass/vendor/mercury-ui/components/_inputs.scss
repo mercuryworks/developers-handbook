@@ -1,0 +1,95 @@
+.input {
+    @include input;
+    &:focus {
+        @include input--focus;
+    }
+}
+
+select.input:not([multiple]) {
+    height: $spacer*2.75;
+    @if ($input-border-radius==0) {
+        border: 0;
+        outline: $border-width--primary $border-style--primary $input-border-color;
+        outline-offset: -($border-width--primary);
+        &:focus {
+            @include input--select-focus;
+        }
+        &::-ms-expand {
+            display: none;
+        }
+        &.input-validation-error {
+            outline-color: $input-validation-border-color;
+        }
+    }
+}
+
+.input[multiple] {
+    padding: 0;
+    option {
+        margin: 0;
+        padding: $spacer*.5 $spacer*.75;
+    }
+}
+
+.input--smallest {
+    font-size: $font-size--base*.8;
+    padding: $spacer*.306;
+}
+
+.input--smaller {
+    padding: $spacer*.306;
+}
+
+.input--small {
+    padding: $spacer*.514;
+}
+
+.input--large {
+    padding: $spacer*.875;
+}
+
+.input--larger {
+    padding: $spacer*1.1115;
+}
+
+.input--largest {
+    padding: $spacer*1.32;
+}
+
+.input-validation-error {
+    @include input--validation
+}
+
+.field-validation-error {
+    @include field--validation
+}
+
+.input--help {
+    @include input--help;
+}
+
+.radio {
+    @include radio;
+}
+
+.radio--label {
+    @include disabled--cursor;
+    margin: 0 $spacer*.75 0 0;
+    .radios--list & {
+        display: block;
+        margin: 0 $spacer*.75 $spacer*.125 0;
+    }
+}
+
+.checkbox {
+    @include checkbox;
+}
+
+.checkbox--label {
+    @include disabled--cursor;
+    margin: 0 $spacer*.75 0 0;
+    .checkboxes--list & {
+        display: block;
+        margin: 0 $spacer*.75 $spacer*.125 0;
+    }
+}

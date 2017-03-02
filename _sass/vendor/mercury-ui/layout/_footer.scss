@@ -1,0 +1,30 @@
+.footer {
+    @include for-sm-up {
+        padding: $spacer*2;
+    }
+    width: 100%;
+    margin: 0;
+    background-color: $primary-color;
+    color: $white;
+    padding: $spacer;
+    a {
+        &:hover,
+        &:focus,
+        &:active {
+            color: $secondary-color--lighter;
+        }
+    }
+}
+
+.footer--link {
+    color: $white;
+    &:visited {
+        color: $white;
+    }
+    &:hover {
+        color: $secondary-color--light;
+    }
+    &:active {
+        color: $white;
+    }
+}

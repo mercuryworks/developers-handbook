@@ -1,0 +1,44 @@
+@mixin off-canvas-undo {
+    overflow: visible;
+    position: static;
+    height: auto;
+    .off-canvas--menu {
+        position: static;
+        z-index: auto;
+        background-color: transparent;
+        transition: none;
+        overflow: visible;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        height: auto;
+        padding: 0;
+        margin: 0 0 0 $spacer;
+        border: 0;
+        animation-name: none;
+        .off-canvas-is-open & {
+            position: static;
+            z-index: auto;
+            background-color: transparent;
+            transition: none;
+            overflow: visible;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            height: auto;
+            padding: 0;
+            margin: 0 0 0 $spacer;
+            border: 0;
+            animation-name: none;
+        }
+    }
+    .off-canvas--open-button,
+    .off-canvas--close-button {
+        display: none;
+    }
+    .overlay {
+        display: none;
+    }
+}

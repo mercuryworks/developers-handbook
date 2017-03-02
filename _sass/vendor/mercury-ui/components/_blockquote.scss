@@ -1,0 +1,38 @@
+.blockquote {
+    padding: $spacer $spacer $spacer $spacer*3;
+    border-left: $spacer*.5 $border-style--primary $gray;
+    background-color: lighten($gray--lightest, 5%);
+    position: relative;
+    font-family: $font-family--italic;
+    font-style: $font-style--italic;
+    &:before {
+        content: '\201C';
+        position: absolute;
+        top: 0;
+        left: $spacer*.25;
+        font-family: $font-family--bold-italic;
+        font-size: $font-size--base*4;
+        color: $gray;
+    }
+}
+
+.blockquote--primary-color {
+    border-color: $primary-color;
+    &:before {
+        color: $primary-color;
+    }
+}
+
+.blockquote--secondary-color {
+    border-color: $secondary-color;
+    &:before {
+        color: $secondary-color;
+    }
+}
+
+.blockquote--tertiary-color {
+    border-color: $tertiary-color;
+    &:before {
+        color: $tertiary-color;
+    }
+}

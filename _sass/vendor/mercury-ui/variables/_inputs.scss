@@ -1,0 +1,17 @@
+
+$input-color: $gray--dark;
+$input-placeholder-color: $gray--lighter;
+$input-background-color: $white;
+$input-border-color: $gray--light;
+$input-border-radius: $border-radius--primary;
+$input-border-width: $border-width--primary;
+
+// Input focus
+$input-focus-color: $info-color;
+
+// Input disabled
+$input-disabled-background-color: $gray--lightest;
+
+// Input validation
+$input-validation-border-color: $error-color;
+$input-validation-background-color: $error-color;

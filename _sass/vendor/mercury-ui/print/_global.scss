@@ -1,0 +1,207 @@
+@media print {
+    @page {
+        size: 8.5in 11in portrait;
+        margin: .5in;
+    }
+    // Base & Typography
+    *,
+    *:before,
+    *:after {
+        color: $black;
+        background: transparent;
+        box-shadow: none;
+        text-shadow: none;
+        transition: none;
+        animation: none;
+        transform: none;
+        opacity: 1;
+    }
+    body {
+        background: $white;
+    }
+    a {
+        color: $black;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+        word-break: break-all;
+        &:visited,
+        &:hover,
+        &:focus,
+        &:active {
+            color: $black;
+        }
+        &:not(.button) {
+            text-decoration: underline;
+        }
+    }
+    img {
+        max-width: 100%;
+        width: auto;
+        height: auto;
+        page-break-inside: avoid;
+    }
+    hr {
+        background: $black;
+        height: 1px;
+    }
+    pre {
+        max-height: none;
+        page-break-inside: avoid;
+        overflow: visible;
+    }
+    textarea {
+        overflow: visible;
+    }
+    code {
+        white-space: normal;
+        page-break-inside: avoid;
+    }
+    tr,
+    ul,
+    ol {
+        page-break-inside: avoid;
+    }
+    p {
+        widows: 4;
+        orphans: 3;
+    }
+    // Components
+    .accordion {
+        border: 1px solid $gray;
+        border-bottom-width: 0;
+        color: $black;
+        background: $white;
+        &:last-child {
+            border-bottom-width: 1px;
+        }
+    }
+    .accordion--content-inner {
+        border-top: 1px solid $gray;
+        background: $white;
+    }
+    .badge {
+        font-weight: bold;
+    }
+    .badge--white {
+        background: $gray--lightest;
+    }
+    .band {
+        padding: .25in 0;
+        background: transparent;
+        color: $black;
+    }
+    .blockquote {
+        border-left-color: $gray;
+    }
+    .button {
+        border: 1px solid $gray;
+        background: $white;
+        color: $black;
+        &:hover,
+        &:focus {
+            border-color: $gray;
+            background: $white;
+            color: $black;
+        }
+        &.disabled,
+        &[disabled] {
+            background: $white;
+            border-color: $gray;
+            color: $gray;
+        }
+    }
+    .card {
+        border-color: $gray;
+        background: $white;
+        .card--header {
+            border-bottom-color: $gray;
+            background: $white;
+        }
+        .card--content {
+            background: $white;
+            color: $black;
+        }
+        .card--footer {
+            border-top-color: $gray;
+            background: $white;
+        }
+        a {
+            color: $black;
+            &:visited,
+            &:hover,
+            &:focus,
+            &:active {
+                color: $black;
+            }
+        }
+    }
+    .hero {
+        .hero--overlay {
+            position: static;
+            background: $gray;
+        }
+        .hero--text {
+            padding: $spacer;
+        }
+        .hero--text-inner {
+            >* {
+                color: $white;
+            }
+        }
+        .hero--next {
+            display: none;
+        }
+    }
+    .input {
+        border-width: 1px;
+        &.disabled,
+        &[disabled] {
+            border-color: $gray;
+            color: $gray;
+        }
+    }
+    .input-group--icon {
+        border-width: 1px;
+    }
+    .modal {
+        position: static;
+        background: $white;
+        animation: none;
+    }
+    .modal-is-open {
+        .modal--content {
+            border: 1px solid $gray;
+            animation: none;
+        }
+    }
+    .modal-overflow {
+        overflow: visible;
+        .modal {
+            overflow: visible;
+        }
+    }
+    .tooltip {
+        &:before,
+        &:after {
+            display: none;
+            content: none;
+        }
+    }
+    .dropdown--list,
+    .mega-menu,
+    .off-canvas,
+    .overlay {
+        display: none;
+    }
+    // Layout
+    .header {
+        padding: 0 0 .25in;
+        margin: 0 0 .25in;
+        border-bottom: 1px solid $black;
+    }
+    .footer {
+        padding: .25in 0 0;
+        margin: .25in 0 0;
+        border-top: 1px solid $black;
+    }
+}

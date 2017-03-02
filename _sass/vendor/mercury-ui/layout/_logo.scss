@@ -1,0 +1,23 @@
+.logo {
+    @include for-md-up {
+        width: 200px;
+    }
+    width: 150px;
+}
+
+.logo--link {
+    display: block;
+    opacity: 1;
+    transition: opacity $transition--primary;
+    &:hover {
+        opacity: .7;
+    }
+    &:focus {
+        outline: 0;
+    }
+}
+
+.logo--image {
+    width: 100%;
+    height: auto;
+}

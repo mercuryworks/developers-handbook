@@ -1,0 +1,23 @@
+.white-space--nowrap {
+    white-space: nowrap;
+}
+
+@each $breakpoint, $width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .white-space--nowrap--#{$breakpoint} {
+            white-space: nowrap;
+        }
+    }
+}
+
+.white-space--wrap {
+    white-space: normal;
+}
+
+@each $breakpoint, $width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .white-space--wrap--#{$breakpoint} {
+            white-space: normal;
+        }
+    }
+}

@@ -1,0 +1,103 @@
+.input-group {
+    display: table;
+    width: 100%;
+    .input-group--action {
+        display: table-cell;
+        vertical-align: middle;
+        text-align: center;
+        min-width: $spacer*2.5;
+        &.input-group--action-icon {
+            width: $spacer*2.5;
+        }
+        &:first-child {
+            .button,
+            .input-group--icon {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+        }
+        &:last-child {
+            .button,
+            .input-group--icon {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+            }
+        }
+    }
+    .input-group--input {
+        display: table-cell;
+        &:first-child {
+            .input {
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+                border-right: 0;
+            }
+        }
+        &:last-child {
+            .input {
+                border-top-left-radius: 0;
+                border-bottom-left-radius: 0;
+                border-left: 0;
+            }
+        }
+    }
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .input-group--#{$breakpoint} {
+            display: table;
+            width: 100%;
+            .input-group--action {
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+                min-width: $spacer*2.5;
+                &.input-group--action-icon {
+                    width: $spacer*2.5;
+                }
+                &:first-child {
+                    .button,
+                    .input-group--icon {
+                        border-top-right-radius: 0;
+                        border-bottom-right-radius: 0;
+                    }
+                }
+                &:last-child {
+                    .button,
+                    .input-group--icon {
+                        border-top-left-radius: 0;
+                        border-bottom-left-radius: 0;
+                    }
+                }
+            }
+            .input-group--input {
+                display: table-cell;
+                &:first-child {
+                    .input {
+                        border-top-right-radius: 0;
+                        border-bottom-right-radius: 0;
+                        border-right: 0;
+                    }
+                }
+                &:last-child {
+                    .input {
+                        border-top-left-radius: 0;
+                        border-bottom-left-radius: 0;
+                        border-left: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.input-group--icon {
+    background-color: $input-border-color;
+    border: $input-border-width solid $input-border-color;
+    border-radius: $border-radius--primary;
+    color: $input-background-color;
+    padding: $spacer*.473 $spacer*.75 $spacer*.5;
+    display: block;
+}

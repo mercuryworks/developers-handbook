@@ -1,0 +1,14 @@
+fieldset {
+    min-width: 0;
+    padding: 0;
+    border: 0;
+}
+
+legend {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    padding: 0;
+    line-height: inherit;
+    white-space: normal;
+}

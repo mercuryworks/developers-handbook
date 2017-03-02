@@ -1,0 +1,85 @@
+@mixin button {
+    overflow: visible;
+    line-height: inherit;
+    font: inherit;
+    text-decoration: none;
+    text-transform: none;
+    background-color: transparent;
+    border: $border-width--primary $border-style--primary transparent;
+    border-radius: $border-radius--primary;
+    color: $color--default;
+    padding: $spacer*.5 $spacer*.75;
+    display: inline-block;
+    cursor: pointer;
+    &:hover, &:focus {
+        text-decoration: none;
+    }
+    &:focus {
+        outline: 1px dotted;
+        outline: 5px auto -webkit-focus-ring-color;
+    }
+    &:-moz-focus-inner,
+    &:-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+    &[disabled],
+    &.disabled {
+        cursor: not-allowed;
+        pointer-events: none;
+        opacity: .5;
+        color: $color--default;
+    }
+}
+
+@mixin button-color--darken($color, $color--hover, $background-color, $background-color--hover, $border-color, $border-color--hover) {
+    background-color: $background-color;
+    border-color: $border-color;
+    border-bottom-color: darken($border-color, 10%);
+    color: $color;
+    &:visited {
+        color: $color;
+    }
+    &:hover, &:focus {
+        background-color: $background-color--hover;
+        border-color: $border-color--hover;
+        border-bottom-color: darken($border-color--hover, 10%);
+        color: $color--hover;
+    }
+    &:active {
+        color: $color--hover;
+    }
+    &[disabled],
+    &.disabled {
+        background-color: $background-color;
+        border-color: $border-color;
+        border-bottom-color: darken($border-color, 10%);
+        color: $color;
+    }
+}
+
+@mixin button-color--lighten($color, $color--hover, $background-color, $background-color--hover, $border-color, $border-color--hover) {
+    background-color: $background-color;
+    border-color: $border-color;
+    border-bottom-color: darken($border-color, 10%);
+    color: $color;
+    &:visited {
+        color: $color;
+    }
+    &:hover, &:focus {
+        background-color: $background-color--hover;
+        border-color: $border-color--hover;
+        border-bottom-color: darken($border-color--hover, 10%);
+        color: $color--hover;
+    }
+    &:active {
+        color: $color--hover;
+    }
+    &[disabled],
+    &.disabled {
+        background-color: $background-color;
+        border-color: $border-color;
+        border-bottom-color: darken($border-color, 10%);
+        color: $color;
+    }
+}

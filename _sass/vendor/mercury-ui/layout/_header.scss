@@ -1,0 +1,11 @@
+
+.header {
+    padding: $spacer;
+    background-color: $white;
+}
+
+.header--inner {
+    display: flex;
+    align-items: center;
+    position: relative;
+}

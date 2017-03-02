@@ -1,0 +1,35 @@
+
+// Colors maps
+// Used in /utilities/_colors.scss and /components/_bands.scss
+// Also reflected in /data/colors.json
+
+$grays: (
+  gray: $gray,
+  black: $black,
+  white: $white
+);
+
+$grays-all: (
+  gray--lightest: $gray--lightest,
+  gray--lighter: $gray--lighter,
+  gray--light: $gray--light,
+  gray: $gray,
+  gray--dark: $gray--dark,
+  gray--darker: $gray--darker,
+  gray--darkest: $gray--darkest,
+  black: $black,
+  white: $white
+);
+
+$state-colors: (
+  error-color: $error-color,
+  warning-color: $warning-color,
+  info-color: $info-color,
+  success-color: $success-color
+);
+
+$brand-colors: (
+  primary-color: $primary-color,
+  secondary-color: $secondary-color,
+  tertiary-color: $tertiary-color
+);

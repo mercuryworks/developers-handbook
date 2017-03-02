@@ -1,0 +1,147 @@
+// Breakpoint mixins for @media and components
+// If adding breakpoints, also add breakpoints to /maps/_breakpoints.scss map
+// Use up mixins generously, use down mixins minimally
+// Your styling should be mobile-first and nearly completely composed of min-widths
+
+@mixin for-xxs-up {
+    @if (map-has-key($breakpoints, xxs) == true) {
+        @media (min-width: map-get($breakpoints, xxs)) {
+            @content;
+        }
+    }
+    @else {
+        @content;
+    }
+}
+
+@mixin for-xxs-down {
+    @if (map-has-key($breakpoints, xs) == true) {
+        @media (max-width: map-get($breakpoints, xs) - 1) {
+            @content;
+        }
+    }
+    @else {
+        @content;
+    }
+}
+
+@mixin for-xs-up {
+    @if (map-has-key($breakpoints, xs) == true) {
+        @media (min-width: map-get($breakpoints, xs)) {
+            @content;
+        }
+    }
+    @else {
+        @content;
+    }
+}
+
+@mixin for-xs-down {
+    @if (map-has-key($breakpoints, sm) == true) {
+        @media (max-width: map-get($breakpoints, sm) - 1) {
+            @content;
+        }
+    }
+    @else {
+        @content;
+    }
+}
+
+@mixin for-sm-up {
+    @if (map-has-key($breakpoints, sm) == true) {
+        @media (min-width: map-get($breakpoints, sm)) {
+            @content;
+        }
+    }
+    @else {
+        @content;
+    }
+}
+
+@mixin for-sm-down {
+    @if (map-has-key($breakpoints, md) == true) {
+        @media (max-width: map-get($breakpoints, md) - 1) {
+            @content;
+        }
+    }
+    @else {
+        @content;
+    }
+}
+
+@mixin for-md-up {
+    @if (map-has-key($breakpoints, md) == true) {
+        @media (min-width: map-get($breakpoints, md)) {
+            @content;
+        }
+    }
+    @else {
+        @content;
+    }
+}
+
+@mixin for-md-down {
+    @if (map-has-key($breakpoints, lg) == true) {
+        @media (max-width: map-get($breakpoints, lg) - 1) {
+            @content;
+        }
+    }
+    @else {
+        @content;
+    }
+}
+
+@mixin for-lg-up {
+    @if (map-has-key($breakpoints, lg) == true) {
+        @media (min-width: map-get($breakpoints, lg)) {
+            @content;
+        }
+    }
+    @else {
+        @content;
+    }
+}
+
+@mixin for-lg-down {
+    @if (map-has-key($breakpoints, xl) == true) {
+        @media (max-width: map-get($breakpoints, xl) - 1) {
+            @content;
+        }
+    }
+    @else {
+        @content;
+    }
+}
+
+@mixin for-xl-up {
+    @if (map-has-key($breakpoints, xl) == true) {
+        @media (min-width: map-get($breakpoints, xl)) {
+            @content;
+        }
+    }
+    @else {
+        @content;
+    }
+}
+
+@mixin for-xl-down {
+    @if (map-has-key($breakpoints, xxl) == true) {
+        @media (max-width: map-get($breakpoints, xxl) - 1) {
+            @content;
+        }
+    }
+    @else {
+        @content;
+    }
+}
+
+@mixin for-xxl-up {
+    @if (map-has-key($breakpoints, xxl) == true) {
+        @media (min-width: map-get($breakpoints, xxl)) {
+            @content;
+        }
+    }
+    @else {
+        @content;
+    }
+}

@@ -1,0 +1,47 @@
+
+// Text align (left, center, right, justify)
+@each $direction in $directions-text {
+    .text-align--#{$direction} {
+        text-align: $direction;
+    }
+}
+
+@each $direction in $directions-text {
+    @each $breakpoint, $width in $breakpoints {
+        @media (min-width:#{$width}) {
+            .text-align--#{$direction}--#{$breakpoint} {
+                text-align: $direction;
+            }
+        }
+    }
+}
+
+// Text decoration (underline, strikethrough/line-through, none
+.text-decoration--underline {
+    text-decoration: underline;
+}
+
+.text-decoration--strikethrough {
+    text-decoration: line-through;
+}
+
+.text-decoration--none {
+    text-decoration: none;
+}
+
+// Text transform
+.text-transform--capitalize {
+    text-transform: capitalize;
+}
+
+.text-transform--uppercase {
+    text-transform: uppercase;
+}
+
+.text-transform--lowercase {
+    text-transform: lowercase;
+}
+
+.text-transform--none {
+    text-transform: none;
+}

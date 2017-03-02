@@ -1,0 +1,55 @@
+.table {
+    background-color: $content-background-color--default;
+    width: 100%;
+    max-width: 100%;
+    border: $border--primary $gray--lightest;
+    margin-top: 0;
+
+    a {
+        word-break: break-all;
+    }
+}
+
+.table--header-cell {
+    padding: $spacer;
+    text-align: left;
+    background-color: lighten($gray--lightest, 5%);
+    vertical-align: middle;
+}
+
+.table--cell {
+    padding: $spacer;
+    text-align: left;
+    border-top: $border-width--primary $border-style--primary $gray--lightest;
+    vertical-align: middle;
+}
+
+.table--overflow {
+    @include table-overflow;
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (max-width:#{$width}) {
+        .table--overflow--#{$breakpoint} {
+            @include table-overflow;
+        }
+    }
+}
+
+.table--block {
+    @include table-block;
+}
+
+.table--header-fixed {
+    @include table-fixed;
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .table--#{$breakpoint} {
+            @include back-to-table;
+        }
+    }
+}

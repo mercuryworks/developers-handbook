@@ -1,0 +1,222 @@
+.hero {
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.hero--image {
+    max-width: none;
+    width: 100%;
+    height: auto;
+}
+
+.hero--overlay {
+    width: 100%;
+    margin: 0;
+    background-color: $gray;
+}
+
+.hero--overlay-over {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    background-color: transparent;
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .hero--overlay-over--#{$breakpoint} {
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+            background-color: transparent;
+        }
+    }
+}
+
+.hero--text {
+    width: 100%;
+    margin: 0;
+    .hero--text-inner {
+        width: 100%;
+        margin: 0;
+        position: relative;
+    }
+}
+
+.hero--text-middle {
+    display: table;
+    height: 100%;
+    .hero--text-inner {
+        display: table-cell;
+        height: 100%;
+        vertical-align: middle;
+    }
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .hero--text-middle--#{$breakpoint} {
+            display: table;
+            height: 100%;
+            .hero--text-inner {
+                display: table-cell;
+                height: 100%;
+                vertical-align: middle;
+            }
+        }
+    }
+}
+
+.hero--text-top {
+    display: table;
+    height: 100%;
+    .hero--text-inner {
+        display: table-cell;
+        height: 100%;
+        vertical-align: top;
+    }
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .hero--text-top--#{$breakpoint} {
+            display: table;
+            height: 100%;
+            .hero--text-inner {
+                display: table-cell;
+                height: 100%;
+                vertical-align: top;
+            }
+        }
+    }
+}
+
+.hero--text-bottom {
+    display: table;
+    height: 100%;
+    .hero--text-inner {
+        display: table-cell;
+        height: 100%;
+        vertical-align: bottom;
+    }
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .hero--text-bottom--#{$breakpoint} {
+            display: table;
+            height: 100%;
+            .hero--text-inner {
+                display: table-cell;
+                height: 100%;
+                vertical-align: bottom;
+            }
+        }
+    }
+}
+
+.hero--padding {
+    padding: $spacer*2;
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .hero--padding--#{$breakpoint} {
+            padding: $spacer*2;
+        }
+    }
+}
+
+.hero--padding--small {
+    padding: $spacer;
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .hero--padding--small--#{$breakpoint} {
+            padding: $spacer;
+        }
+    }
+}
+
+.hero--padding--large {
+    padding: $spacer*3;
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .hero--padding--large--#{$breakpoint} {
+            padding: $spacer*3;
+        }
+    }
+}
+
+.hero--text--smallest {
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.hero--text--smaller {
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+.hero--text--small {
+    max-width: 680px;
+    margin: 0 auto;
+}
+
+.hero--text--medium {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.hero--text--large {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero--text--larger {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.hero--text--largest {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.hero--next {
+    margin: 0;
+    font-size: $font-size--base*2;
+    line-height: 1;
+    @media (min-width: map-get($breakpoints, sm)) {
+        font-size: $font-size--base*3;
+    }
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .hero--next--#{$breakpoint} {
+            position: absolute;
+            bottom: $spacer*.5;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+}

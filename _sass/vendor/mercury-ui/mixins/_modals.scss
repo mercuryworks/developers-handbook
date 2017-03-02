@@ -1,0 +1,8 @@
+@mixin modal-color($background-color, $title-color) {
+    .modal--header, .modal--footer  {
+        background-color: $background-color;
+    }
+    .modal--title {
+        color: $title-color;
+    }
+}

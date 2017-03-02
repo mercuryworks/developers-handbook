@@ -1,0 +1,250 @@
+.tooltip {
+    position: relative;
+    &:before,
+    &:after {
+        display: none;
+        opacity: 0;
+        transition: opacity $transition--primary;
+        position: absolute;
+        z-index: 1;
+    }
+    &:before {
+        content: '';
+        width: 0;
+        height: 0;
+    }
+    &:after {
+        content: attr(data-tooltip);
+        font-size: $font-size--base*.8;
+        background-color: $black;
+        color: $white;
+        padding: $spacer*.5 $spacer;
+        border-radius: $border-radius--primary;
+        width: 250px;
+    }
+    &:hover,
+    &:focus {
+        &:before,
+        &:after {
+            display: block;
+            opacity: 1;
+        }
+    }
+}
+
+.tooltip--top {
+    @include tooltip--top;
+}
+
+.tooltip--right {
+    @include tooltip--right;
+}
+
+.tooltip--bottom {
+    @include tooltip--bottom;
+}
+
+.tooltip--left {
+    @include tooltip--left;
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .tooltip--top--#{$breakpoint} {
+            @include tooltip--top;
+        }
+        .tooltip--right--#{$breakpoint} {
+            @include tooltip--right;
+        }
+        .tooltip--bottom--#{$breakpoint} {
+            @include tooltip--bottom;
+        }
+        .tooltip--left--#{$breakpoint} {
+            @include tooltip--left;
+        }
+    }
+}
+
+.tooltip--primary-color {
+    &:after {
+        background-color: $primary-color;
+    }
+    &.tooltip--top {
+        &:before {
+            border-top-color: $primary-color;
+        }
+    }
+    &.tooltip--right {
+        &:before {
+            border-right-color: $primary-color;
+        }
+    }
+    &.tooltip--bottom {
+        &:before {
+            border-bottom-color: $primary-color;
+        }
+    }
+    &.tooltip--left {
+        &:before {
+            border-left-color: $primary-color;
+        }
+    }
+}
+
+.tooltip--secondary-color {
+    &:after {
+        background-color: $secondary-color;
+    }
+    &.tooltip--top {
+        &:before {
+            border-top-color: $secondary-color;
+        }
+    }
+    &.tooltip--right {
+        &:before {
+            border-right-color: $secondary-color;
+        }
+    }
+    &.tooltip--bottom {
+        &:before {
+            border-bottom-color: $secondary-color;
+        }
+    }
+    &.tooltip--left {
+        &:before {
+            border-left-color: $secondary-color;
+        }
+    }
+}
+
+.tooltip--tertiary-color {
+    &:after {
+        background-color: $tertiary-color;
+    }
+    &.tooltip--top {
+        &:before {
+            border-top-color: $tertiary-color;
+        }
+    }
+    &.tooltip--right {
+        &:before {
+            border-right-color: $tertiary-color;
+        }
+    }
+    &.tooltip--bottom {
+        &:before {
+            border-bottom-color: $tertiary-color;
+        }
+    }
+    &.tooltip--left {
+        &:before {
+            border-left-color: $tertiary-color;
+        }
+    }
+}
+
+.tooltip--smallest {
+    &:after {
+        width: 100px;
+    }
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .tooltip--smallest--#{$breakpoint} {
+            width: 100px;
+        }
+    }
+}
+
+.tooltip--smaller {
+    &:after {
+        width: 150px;
+    }
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .tooltip--smaller--#{$breakpoint} {
+            width: 150px;
+        }
+    }
+}
+
+.tooltip--small {
+    &:after {
+        width: 200px;
+    }
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .tooltip--small--#{$breakpoint} {
+            width: 200px;
+        }
+    }
+}
+
+.tooltip--medium {
+    &:after {
+        width: 250px;
+    }
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .tooltip--medium--#{$breakpoint} {
+            width: 250px;
+        }
+    }
+}
+
+.tooltip--large {
+    &:after {
+        width: 300px;
+    }
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .tooltip--large--#{$breakpoint} {
+            width: 300px;
+        }
+    }
+}
+
+.tooltip--larger {
+    &:after {
+        width: 350px;
+    }
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .tooltip--larger--#{$breakpoint} {
+            width: 350px;
+        }
+    }
+}
+
+.tooltip--largest {
+    &:after {
+        width: 400px;
+    }
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .tooltip--largest--#{$breakpoint} {
+            width: 400px;
+        }
+    }
+}

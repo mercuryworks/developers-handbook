@@ -1,0 +1,29 @@
+hr,
+.hr {
+    @include hr($gray--lighter);
+    box-sizing: content-box;
+    margin-top: $spacer*2;
+    border: 0;
+    overflow: visible;
+    height: $border-width--primary;
+    &:only-child {
+        margin: $spacer*2 0;
+    }
+    +hr {
+        margin-bottom: $spacer*2;
+    }
+}
+
+@each $name,
+$color in $grays {
+    .hr--#{$name} {
+        @include hr($color);
+    }
+}
+
+@each $name,
+$color in $brand-colors {
+    .hr--#{$name} {
+        @include hr($color);
+    }
+}

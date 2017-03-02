@@ -1,0 +1,20 @@
+// Breakpoints for @media and components
+// If adding breakpoints, also add breakpoints to /mixins/_breakpoints.scss mixins
+// Think carefully about adding another breakpoint, as you'll increase CSS weight
+
+// $breakpoints: (
+//   sm: 768px,
+//   md: 1024px,
+//   lg: 1280px,
+//   xl: 1600px
+// );
+
+$breakpoints: (
+  xxs: 414px,
+  xs: 568px,
+  sm: 768px,
+  md: 1024px,
+  lg: 1280px,
+  xl: 1600px,
+  xxl: 1800px
+);

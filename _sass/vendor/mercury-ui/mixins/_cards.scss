@@ -1,0 +1,17 @@
+@mixin card-color($border-color, $background-color, $color, $content-background-color) {
+    border-color: $border-color;
+    .card--header {
+        border-bottom-color: $border-color;
+        background-color: $background-color;
+        color: $color;
+    }
+    .card--content {
+        background-color: $content-background-color;
+        color: $color;
+    }
+    .card--footer {
+        border-top-color: $border-color;
+        background-color: $background-color;
+        color: $color;
+    }
+}

@@ -1,0 +1,12 @@
+a {
+    @include link($link-color--default, $link-visited-color--default, $link-hover-color--default, $link-active-color--default);
+    background-color: transparent;
+    text-decoration: $link-text-decoration;
+    -webkit-text-decoration-skip: objects;
+    &:hover, &:focus {
+        text-decoration: $link-text-decoration-hover;
+    }
+    &:hover, &:active {
+        outline: $link-outline;
+    }
+}

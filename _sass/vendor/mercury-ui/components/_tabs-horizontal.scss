@@ -1,0 +1,101 @@
+// Horizontal tabs
+.horizontal-tabs {
+    width: 100%;
+    display: block;
+}
+
+.horizontal-tabs--tabs {
+    display: none;
+    flex-wrap: wrap;
+}
+
+.horizontal-tabs--tab {
+    @include button;
+    @include button-color--lighten($color--default, $color--default, $gray--lightest, lighten($gray--lightest, 5%), $gray--lighter, $gray--lighter);
+    vertical-align: middle;
+    border-width: $border-width--primary;
+    border-bottom: 0;
+    border-radius: $border-radius--primary $border-radius--primary 0 0;
+    margin: 0 $spacer*.25 0 0;
+    position: relative;
+    bottom: -($border-width--primary);
+    z-index: 1;
+    &:last-child {
+        margin: 0;
+    }
+    &.tab-is-active {
+        background-color: $white;
+        cursor: default;
+        z-index: 3;
+    }
+}
+
+.horizontal-tabs--tab-contents {
+    margin: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.horizontal-tabs--tab-content {
+    @include for-lg-up {
+        padding: $spacer*2;
+    }
+    display: none;
+    padding: $spacer;
+    margin: 0;
+    border: $border-width--primary $border-style--primary $gray--lighter;
+    border-radius: 0;
+    &.tab-content-is-shown {
+        display: block;
+        border-bottom-width: 0;
+        &:last-child {
+            border-bottom-width: $border-width--primary;
+            border-radius: 0 0 $border-radius--primary $border-radius--primary;
+        }
+    }
+}
+
+.horizontal-tabs--tab-accordion {
+    @include button;
+    @include button-color--lighten($color--default, $color--default, $gray--lightest, lighten($gray--lightest, 5%), $gray--lighter, $gray--lighter);
+    display: block;
+    width: 100%;
+    text-align: left;
+    border-width: $border-width--primary;
+    border-bottom-width: 0;
+    border-radius: $border-radius--primary;
+    margin: 0;
+    &:first-child {
+        border-radius: $border-radius--primary $border-radius--primary 0 0;
+    }
+    &:nth-last-child(2) {
+        border-width: $border-width--primary;
+        border-radius: 0 0 $border-radius--primary $border-radius--primary;
+    }
+    &.tab-is-active {
+        background-color: $white;
+        border-bottom-width: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+        cursor: default;
+        &:nth-last-child(2) {
+            border-radius: 0;
+        }
+    }
+}
+
+.arrow {
+    .tab-is-active & {
+        border-top: 0;
+        border-bottom: 5px solid $black;
+    }
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .horizontal-tabs--#{$breakpoint} {
+            @include horizontal-tabs;
+        }
+    }
+}

@@ -1,0 +1,130 @@
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    background-color: rgba($primary-color--darkest, .75);
+    margin: 0;
+    animation-name: fade-in;
+    animation-duration: $transition-time--primary;
+    animation-fill-mode: both;
+    .modal-overflow & {
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    &.modal-is-open {
+        display: block;
+    }
+    &.modal-is-closing {
+        animation-name: fade-out;
+        animation-duration: $transition-time--primary;
+        animation-delay: $transition-time--primary;
+        animation-fill-mode: both;
+    }
+}
+
+.modal--inner {
+    height: 100%;
+}
+
+.modal-overflow {
+    overflow: hidden;
+    .touchevents & {
+        position: fixed;
+    }
+}
+
+.modal--centered {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+
+.modal--centered-inner {
+    @include for-md-up {
+        padding: $spacer*2;
+    }
+    @include for-lg-up {
+        padding: $spacer*3;
+    }
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: $spacer;
+}
+
+.modal--content {
+    max-width: 900px;
+    margin: 0 auto;
+    cursor: default;
+    .modal-is-open & {
+        animation-name: fade-in--down;
+        animation-duration: $transition-time--primary*2;
+        animation-delay: $transition-time--primary;
+        animation-fill-mode: both;
+    }
+    .modal-is-closing & {
+        animation-name: fade-out--up;
+        animation-duration: $transition-time--primary*2;
+        animation-fill-mode: both;
+    }
+}
+
+.modal--header {
+    padding: $spacer $spacer $spacer*.75;
+    background-color: $gray--lightest;
+    border-top-left-radius: $border-radius--primary;
+    border-top-right-radius: $border-radius--primary;
+}
+
+.modal--body {
+    padding: $spacer;
+    background-color: $white;
+}
+
+.modal--footer {
+    padding: $spacer;
+    background-color: $gray--lightest;
+    border-bottom-left-radius: $border-radius--primary;
+    border-bottom-right-radius: $border-radius--primary;
+}
+
+.modal--content--smallest {
+    max-width: 350px;
+}
+
+.modal--content--smaller {
+    max-width: 500px;
+}
+
+.modal--content--small {
+    max-width: 700px;
+}
+
+.modal--content--large {
+    max-width: 1200px;
+}
+
+.modal--content--larger {
+    max-width: 1400px;
+}
+
+.modal--content--largest {
+    max-width: 1600px;
+}
+
+.modal--primary-color {
+    @include modal-color($primary-color, $white);
+}
+
+.modal--secondary-color {
+    @include modal-color($secondary-color, $white);
+}
+
+.modal--tertiary-color {
+    @include modal-color($tertiary-color, $white);
+}

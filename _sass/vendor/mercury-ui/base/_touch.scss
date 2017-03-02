@@ -1,0 +1,13 @@
+
+// Remove the 300ms delay on these HTML elements
+a,
+area,
+button,
+[role='button'],
+input,
+label,
+select,
+summary,
+textarea {
+    touch-action: manipulation;
+}

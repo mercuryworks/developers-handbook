@@ -1,0 +1,53 @@
+
+.margin--none {
+    margin: 0;
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .margin--none--#{$breakpoint} {
+            margin: 0;
+        }
+    }
+}
+
+.margin-left--auto {
+    @include margin-left--auto;
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .margin-left--auto--#{$breakpoint} {
+            @include margin-left--auto;
+        }
+    }
+}
+
+.margin-right--auto {
+    @include margin-right--auto;
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .margin-right--auto--#{$breakpoint} {
+            @include margin-right--auto;
+        }
+    }
+}
+
+.margin-top--auto {
+    @include margin-top--auto;
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .margin-top--auto--#{$breakpoint} {
+            @include margin-top--auto;
+        }
+    }
+}
+

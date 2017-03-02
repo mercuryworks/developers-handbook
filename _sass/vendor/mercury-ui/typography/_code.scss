@@ -1,0 +1,30 @@
+code,
+kbd,
+pre,
+samp {
+    font-family: 'Menlo', 'Monaco', 'Consolas', monospace;
+    font-size: $font-size--base;
+}
+
+code {
+    font-size: $font-size--base*.8;
+    background-color: lighten($gray--lightest, 5%);
+    padding: $spacer*.125 $spacer*.25;
+    color: $color--default;
+    border-radius: $border-radius--primary;
+}
+
+pre {
+    overflow-x: auto;
+    overflow-y: visible;
+}
+
+.code-block {
+    display: block;
+    font-size: $font-size--base*.8;
+    padding: $spacer;
+    background-color: lighten($gray--lightest, 5%);
+    border: $border-width--primary $border-style--primary $gray--lightest;
+    border-radius: $border-radius--primary;
+    color: $color--default;
+}

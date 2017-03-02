@@ -1,0 +1,42 @@
+
+// Font families
+$font-family--primary: 'HaboroSans-NorReg', sans-serif;
+$font-family--secondary: 'Haboro Sans Round', sans-serif;
+$font-family--bold: 'HaboroSans-NorBol', sans-serif;
+$font-family--italic: 'HaboroSans-NorRegIt', sans-serif;
+$font-family--bold-italic: 'HaboroSans-NorBolIt', sans-serif;
+
+// Font sizes
+$font-size--root: 18px;
+$font-size--base: 1rem; // 16px default
+
+// Font weights
+$font-weight--normal: normal;
+$font-weight--bold: normal;
+
+// Font styles
+$font-style--normal: normal;
+$font-style--italic: normal;
+
+// Line heights
+$line-height--base: 1.6;
+$line-height--headings: 1.2;
+
+// Small font sizing
+$font-size--small: 65%;
+
+// Sub
+$sub-position: -.25em;
+
+// Sup
+$sup-position: -.5em;
+
+// Html
+$html-font-family: sans-serif;
+$html-font-size: $font-size--root;
+$html-text-size-adjust: 100%;
+
+// Body
+$body-font-family: $font-family--primary;
+$body-font-size: $font-size--base;
+$body-line-height: $line-height--base;

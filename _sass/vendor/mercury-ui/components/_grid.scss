@@ -1,0 +1,139 @@
+// Grid variables
+$columns: 12;
+$column-gutter: $spacer;
+// Container
+.container {
+    margin-top: 0;
+    padding-left: $column-gutter;
+    padding-right: $column-gutter;
+    .band--inner>& {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+// Row
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 1 auto;
+    margin-left: -($column-gutter);
+    margin-right: -($column-gutter);
+    width: auto;
+    // Column margin off
+    &.margin--off {
+        >.col {
+            margin: 0;
+        }
+    }
+    &.padding--off {
+        margin-left: 0;
+        margin-right: 0;
+        >.col {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    +.row {
+        margin-top: 0;
+    }
+}
+
+// Columns
+.col {
+    position: relative;
+    min-height: 1px;
+    padding: 0 $column-gutter;
+    width: 100%;
+    max-width: none;
+    margin-top: 0;
+    margin-bottom: $column-gutter*2;
+}
+
+// Columns
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        @for $i from 1 through $columns {
+            .col--#{$breakpoint}-#{$i} {
+                position: relative;
+                min-height: 1px;
+                padding: 0 $column-gutter;
+                flex: 0 0 ($i/$columns)*100%;
+                max-width: ($i/$columns)*100%;
+            }
+        }
+    }
+}
+
+// Auto columns
+.col--auto {
+    @include for-xxs-up {
+        flex-basis: 0;
+        flex-grow: 1;
+        width: auto;
+        max-width: 100%;
+    }
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .col--auto--#{$breakpoint} {
+            flex-basis: 0;
+            flex-grow: 1;
+            max-width: 100%;
+        }
+    }
+}
+
+// Column ordering
+.col--first {
+    order: -1;
+}
+
+.col--last {
+    order: 1;
+}
+
+// Make containting column content equal height
+.col--flex {
+    display: flex;
+}
+
+// Column alignment by using row (parent) classes
+.row--reverse {
+    flex-direction: row-reverse;
+}
+
+.row--top {
+    align-items: flex-start;
+}
+
+.row--middle {
+    align-items: center;
+}
+
+.row--bottom {
+    align-items: flex-end;
+}
+
+.row--left {
+    justify-content: flex-start;
+}
+
+.row--center {
+    justify-content: center;
+}
+
+.row--right {
+    justify-content: flex-end;
+}
+
+.row--around {
+    justify-content: space-around;
+}
+
+.row--between {
+    justify-content: space-between;
+}

@@ -1,0 +1,131 @@
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown--list {
+    @include for-xxs-up {
+        @include dropdown-max-width(xxs);
+    }
+    @include for-xs-up {
+        @include dropdown-max-width(xs);
+    }
+    @include for-sm-up {
+        @include dropdown-max-width(sm);
+    }
+    @include for-md-up {
+        @include dropdown-max-width(md);
+    }
+    display: none;
+    animation-name: fade-in--up;
+    animation-duration: $transition-time--primary*.5;
+    animation-fill-mode: both;
+    position: absolute;
+    left: 0;
+    right: auto;
+    z-index: 1;
+    max-width: 280px;
+    padding: 0;
+    background-color: $white;
+    box-shadow: 0 $spacer*.5 $spacer 0 rgba($black, .15);
+    border: $border-width--primary $border-style--primary $gray--lightest;
+    border-bottom: $border-width--primary $border-style--primary $gray--lightest;
+    border-radius: $border-radius--primary;
+    @if ($border-radius--primary==0) {
+        margin: -($border-width--primary) 0 0;
+        border-top-width: 0;
+    }
+    @else {
+        margin: 0;
+    }
+    .dropdown-is-open & {
+        display: block;
+    }
+    .dropdown--primary-color & {
+        background-color: $primary-color;
+        border-color: $primary-color--dark;
+    }
+    .dropdown--secondary-color & {
+        background-color: $secondary-color;
+        border-color: $secondary-color--dark;
+    }
+    .dropdown--tertiary-color & {
+        background-color: $tertiary-color;
+        border-color: $tertiary-color--dark;
+    }
+}
+
+.dropdown--right {
+    .dropdown--list {
+        @include dropdown--right;
+    }
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .dropdown--right--#{$breakpoint} {
+            .dropdown--list {
+                @include dropdown--right;
+            }
+        }
+    }
+}
+
+.dropdown--link {
+    display: block;
+    padding: $spacer*.5 $spacer*.75 $spacer*.375;
+    margin: 0;
+    background-color: transparent;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    &:hover,
+    &:focus {
+        background-color: lighten($gray--lightest, 5%);
+    }
+    .dropdown--primary-color & {
+        color: $secondary-color--inverse;
+        &:hover,
+        &:focus {
+            background-color: $primary-color--light;
+            color: $primary-color--inverse;
+        }
+    }
+    .dropdown--secondary-color & {
+        color: $secondary-color--inverse;
+        &:hover,
+        &:focus {
+            background-color: $secondary-color--light;
+            color: $secondary-color--inverse;
+        }
+    }
+    .dropdown--tertiary-color & {
+        color: $secondary-color--inverse;
+        &:hover,
+        &:focus {
+            background-color: $tertiary-color--light;
+            color: $tertiary-color--inverse;
+        }
+    }
+}
+
+.dropdown--button {
+    white-space: nowrap;
+}
+
+.dropdown--divider {
+    display: block;
+    margin: 0;
+}
+
+.arrow {
+    .dropdown-is-open & {
+        border-top: 0;
+        border-bottom: 5px solid $black;
+    }
+}
+
+.touch-dropdown-open {
+    cursor: pointer;
+}

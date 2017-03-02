@@ -1,0 +1,42 @@
+textarea {
+    overflow: auto;
+    resize: vertical;
+    min-height: 100px;
+}
+
+[type='checkbox'],
+[type='radio'] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+input[type='date'],
+input[type='time'],
+input[type='datetime-local'],
+input[type='month'] {
+    -webkit-appearance: listbox;
+}
+
+input[type='search'] {
+    -webkit-appearance: none;
+    outline-offset: -2px;
+    &:-webkit-search-cancel-button,
+    &:-webkit-search-decoration {
+        -webkit-appearance: none;
+    }
+}
+
+input[type='number'] {
+    &:-webkit-inner-spin-button,
+    &:-webkit-outer-spin-button {
+        height: auto;
+    }
+}
+
+[hidden] {
+    display: none;
+}
+
+input[type='color'] {
+    padding: 0;
+}

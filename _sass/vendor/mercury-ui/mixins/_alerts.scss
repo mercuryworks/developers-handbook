@@ -1,0 +1,4 @@
+@mixin alert-color($border-color, $background-color) {
+    border-color: $border-color;
+    background-color: $background-color;
+}

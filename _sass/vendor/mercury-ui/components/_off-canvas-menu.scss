@@ -1,0 +1,148 @@
+.off-canvas {
+    margin: 0 0 0 auto;
+}
+
+.off-canvas--menu {
+    @include for-xs-up {
+        width: 80%;
+    }
+    @include for-sm-up {
+        width: 70%;
+    }
+    @include for-md-up {
+        width: 60%;
+    }
+    @include for-lg-up {
+        width: 50%;
+    }
+    @include for-xl-up {
+        width: 40%;
+    }
+    @include for-xxl-up {
+        width: 30%;
+    }
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 10;
+    width: 90%;
+    padding: $spacer;
+    background-color: $white;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.off-canvas--link {
+    @include link($secondary-color, $secondary-color, $secondary-color--darkest, $secondary-color--light);
+    display: block;
+    padding: $spacer;
+    margin-top: 0;
+    clear: both;
+}
+
+.off-canvas--direction--left {
+    .off-canvas--menu {
+        right: auto;
+        left: -100%;
+        transition: left $transition--primary;
+        border-right: $border-width--primary $border-style--primary $gray--lightest;
+        .off-canvas-is-open & {
+            animation-name: off-canvas--open--left;
+            animation-duration: $transition-time--primary;
+            animation-fill-mode: both;
+        }
+        .off-canvas-is-closing & {
+            animation-name: off-canvas--close--left;
+            animation-duration: $transition-time--primary;
+            animation-fill-mode: both;
+        }
+    }
+}
+
+.off-canvas--direction--right {
+    .off-canvas--menu {
+        right: -100%;
+        left: auto;
+        transition: right $transition--primary;
+        border-left: $border-width--primary $border-style--primary $gray--lightest;
+        .off-canvas-is-open & {
+            animation-name: off-canvas--open--right;
+            animation-duration: 300ms;
+            animation-fill-mode: both;
+        }
+        .off-canvas-is-closing & {
+            animation-name: off-canvas--close--right;
+            animation-duration: 300ms;
+            animation-fill-mode: both;
+        }
+    }
+}
+
+.off-canvas-is-open {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: $white;
+    .touchevents & {
+        position: fixed;
+    }
+}
+
+@keyframes off-canvas--open--right {
+    from {
+        right: -100%;
+    }
+    to {
+        right: 0;
+    }
+}
+
+@keyframes off-canvas--close--right {
+    from {
+        right: 0;
+    }
+    to {
+        right: -100%;
+    }
+}
+
+@keyframes off-canvas--open--left {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@keyframes off-canvas--close--left {
+    from {
+        left: 0;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+.off-canvas--close-button {
+    margin: 0 0 $spacer auto;
+    float: right;
+}
+
+.overlay {
+    .off-canvas-is-open &,
+    .off-canvas-is-closing & {
+        display: block;
+    }
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .off-canvas--off--#{$breakpoint} {
+            @include off-canvas-undo;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+---
+layout: default
+---
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="band band--dark band--primary-color post--header">
+    <div class="inner band--inner">
+      <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
+        {% if page.date %}
+        <p class="post-meta">
+          Added <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>
+        </p>
+        {% endif %}
+        {% if page.lastUpdated %}
+        <p class="post-meta">
+          Updated <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.lastUpdated | date: "%B %-d, %Y" }}</time>
+        </p>
+        {% endif %}
+        {% if page.author %}
+        <p>
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+        </p>
+        {% endif %}
+    </div>
+  </header>
+  <div class="band band--white">
+    <div class="inner band--inner">
+      <div class="row">
+        <div class="col col--md-8 col--xl-6">
+          {{ content }}
+          {% if site.disqus.shortname %}
+            {% include disqus_comments.html %}
+          {% endif %}
+        </div>
+        <div class="col col--md-4 col--xl-6">
+          {% include table-of-contents.html %}
+        </div>
+      </div>
+    </div>
+  </div>
+</article>

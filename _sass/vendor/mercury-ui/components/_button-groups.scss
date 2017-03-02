@@ -1,0 +1,12 @@
+.button-group {
+    @include button-group;
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .button-group--#{$breakpoint} {
+            @include button-group;
+        }
+    }
+}

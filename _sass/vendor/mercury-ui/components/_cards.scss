@@ -1,0 +1,101 @@
+.card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    border-width: $border-width--primary;
+    border-style: $border-style--primary;
+    border-radius: $border-radius--primary;
+    >* {
+        margin-top: 0;
+    }
+}
+
+.card--header {
+    border-bottom-width: $border-width--primary;
+    border-bottom-style: $border-style--primary;
+}
+
+.card--content {
+    height: 100%;
+}
+
+.card--footer {
+    border-top-width: $border-width--primary;
+    border-top-style: $border-style--primary;
+    margin: auto 0 0;
+}
+
+.card--padding {
+    padding: $spacer;
+}
+
+.card--link {
+    &:hover, &:focus {
+        text-decoration: none;
+    }
+}
+
+.card {
+    @include card-color($gray--lightest, lighten($gray--lightest, 5%), $color--default, $white);
+}
+
+.card--inversed {
+    @include card-color($gray--lightest, $white, $color--default, lighten($gray--lightest, 5%));
+}
+
+.card--primary-color {
+    @include card-color($primary-color--darkest, $primary-color--dark, $white, $primary-color);
+    a {
+        @include link($white, $white, $gray--lightest, $white);
+    }
+}
+
+.card--secondary-color {
+    @include card-color($secondary-color--darkest, $secondary-color--dark, $white, $secondary-color);
+    a {
+        @include link($white, $white, $gray--lightest, $white);
+    }
+}
+
+.card--tertiary-color {
+    @include card-color($tertiary-color--darkest, $tertiary-color--dark, $white, $tertiary-color);
+    a {
+        @include link($white, $white, $gray--lightest, $white);
+    }
+}
+
+.cards {
+    column-gap: $spacer;
+    >.card {
+        margin-top: 0;
+        margin-bottom: $spacer;
+        display: inline-block;
+    }
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .cards--col-2--#{$breakpoint} {
+            column-count: 2;
+        }
+    }
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .cards--col-3--#{$breakpoint} {
+            column-count: 3;
+        }
+    }
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .cards--col-4--#{$breakpoint} {
+            column-count: 4;
+        }
+    }
+}

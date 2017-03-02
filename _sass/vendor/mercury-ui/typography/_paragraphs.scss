@@ -1,0 +1,55 @@
+address,
+.address {
+    font-style: $font-style--normal;
+    line-height: inherit;
+}
+
+strong,
+.bold {
+    font-family: $font-family--bold;
+    font-weight: $font-weight--bold;
+}
+
+em,
+.italic {
+    font-family: $font-family--italic;
+    font-style: $font-style--italic;
+}
+
+strong em,
+em strong,
+.bold-italic {
+    font-family: $font-family--bold-italic;
+}
+
+small,
+.small {
+    font-size: $font-size--small;
+}
+
+sub,
+sup,
+.sub,
+.sup {
+    font-size: $font-size--small;
+    line-height: 0;
+    margin: 0 1px;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup,
+.sup {
+    top: $sup-position;
+}
+
+sub,
+.sub {
+    bottom: $sub-position;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}

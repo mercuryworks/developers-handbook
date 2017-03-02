@@ -1,0 +1,91 @@
+.button {
+    @include button;
+}
+
+.button--small {
+    padding: $spacer*.375 $spacer*.625;
+}
+
+.button--smaller {
+    padding: $spacer*.25 $spacer*.5;
+    font-size: $font-size--base*.875;
+}
+
+.button--smallest {
+    padding: $spacer*.25 $spacer*.375;
+    font-size: $font-size--base*.75;
+}
+
+.button--large {
+    padding: $spacer*.625 $spacer;
+    font-size: $font-size--base*1.125;
+}
+
+.button--larger {
+    padding: $spacer*.75 $spacer*1.125;
+    font-size: $font-size--base*1.25;
+}
+
+.button--largest {
+    padding: $spacer*.875 $spacer*1.25;
+    font-size: $font-size--base*1.375;
+}
+
+.button--primary-color {
+    @include button-color--lighten($white, $white, $primary-color, $primary-color--light, $primary-color--dark, $primary-color);
+}
+
+.button--secondary-color {
+    @include button-color--lighten($white, $white, $secondary-color, $secondary-color--light, $secondary-color--dark, $secondary-color);
+}
+
+.button--tertiary-color {
+    @include button-color--lighten($white, $white, $tertiary-color, $tertiary-color--light, $tertiary-color--dark, $tertiary-color);
+}
+
+.button--gray {
+    @include button-color--lighten($white, $white, $gray, $gray--light, $gray--dark, $gray--light);
+}
+
+.button--black {
+    @include button-color--lighten($white, $white, $black, $gray--darker, $gray--darker, $gray--dark);
+}
+
+.button--white {
+    @include button-color--darken($black, $black, $white, lighten($gray--lightest, 5%), $gray--lightest, darken($gray--lightest, 5%));
+}
+
+.button--error-color {
+    @include button-color--lighten($white, $white, $error-color, lighten($error-color, 10%), darken($error-color, 10%), $error-color);
+}
+
+.button--warning-color {
+    @include button-color--lighten($white, $white, $warning-color, lighten($warning-color, 10%), darken($warning-color, 10%), $warning-color);
+}
+
+.button--success-color {
+    @include button-color--lighten($white, $white, $success-color, lighten($success-color, 10%), darken($success-color, 10%), $success-color);
+}
+
+.button--info-color {
+    @include button-color--lighten($white, $white, $info-color, lighten($info-color, 10%), darken($info-color, 10%), $info-color);
+}
+
+.button--link {
+    @include button-color--darken($link-color--default, $link-hover-color--default, transparent, transparent, transparent, transparent);
+}
+
+.button--block {
+    display: block;
+    width: 100%;
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .button--block--#{$breakpoint} {
+            display: block;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@mixin pagination-color($color, $border-color, $background-color) {
+    .pagination--link {
+        color: $color;
+        border-color: darken($border-color, 20%);
+        background-color: $background-color;
+        &:visited {
+            color: $color;
+        }
+        &:hover,
+        &:focus {
+            border-color: $border-color;
+            background-color: saturate(lighten($background-color, 10%), 20%);
+        }
+        &:active {
+            color: $color;
+        }
+        .arrow--left {
+            border-right-color: $color;
+        }
+        .arrow--right {
+            border-left-color: $color;
+        }
+    }
+    .page-is-current {
+        .pagination--link {
+            border-color: $border-color;
+            background-color: saturate(lighten($background-color, 10%), 20%);
+        }
+    }
+}

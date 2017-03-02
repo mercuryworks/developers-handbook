@@ -1,0 +1,87 @@
+.pagination--list {
+    @include list-style--none;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.pagination--list-item {
+    margin-left: 2px;
+    display: none;
+    &:first-child {
+        margin-left: 0;
+    }
+    &.page-is-current,
+    &.page--first,
+    &.page--prev,
+    &.page--next,
+    &.page--last {
+        display: list-item;
+    }
+}
+
+.pagination--link {
+    @include for-sm-up {
+        min-width: 3em;
+    }
+    padding: $spacer*.5 $spacer*.75;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: $border-radius--primary;
+    border: $border--primary $gray--lightest;
+    background-color: lighten($gray--lightest, 5%);
+    color: $color--default;
+    height: 100%;
+    min-width: 2.5em;
+    &:visited {
+        color: $color--default;
+    }
+    &:hover,
+    &:focus {
+        border-color: $gray--lightest;
+        background-color: $white;
+        text-decoration: none;
+    }
+    &:active {
+        color: $color--default;
+    }
+}
+
+.page-is-current {
+    .pagination--link {
+        cursor: default;
+        border-color: $gray--lightest;
+        background-color: $white;
+    }
+}
+
+.page-is-disabled {
+    cursor: not-allowed;
+    .pagination--link {
+        pointer-events: none;
+        opacity: .5;
+    }
+}
+
+.pagination--primary-color {
+    @include pagination-color($primary-color--inverse, $primary-color, $primary-color);
+}
+
+.pagination--secondary-color {
+    @include pagination-color($secondary-color--inverse, $secondary-color, $secondary-color);
+}
+
+.pagination--tertiary-color {
+    @include pagination-color($tertiary-color--inverse, $tertiary-color, $tertiary-color);
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .pagination--list-item--#{$breakpoint} {
+            display: list-item;
+        }
+    }
+}

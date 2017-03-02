@@ -1,0 +1,38 @@
+@mixin vertical-tabs {
+    display: flex;
+    .vertical-tabs--tab-list {
+        display: block;
+        max-width: 25%;
+    }
+    .vertical-tabs--tab-contents {
+        flex: 1 1 auto;
+        max-width: 75%;
+    }
+    .vertical-tabs--tab-content {
+        min-height: 400px;
+        height: 100%;
+        border-radius: 0 $border-radius--primary $border-radius--primary $border-radius--primary;
+        &.tab-content-is-shown {
+            border-bottom-width: $border-width--primary;
+        }
+    }
+    .vertical-tabs--tab-accordion {
+        display: none;
+    }
+}
+
+@mixin horizontal-tabs {
+    .horizontal-tabs--tabs {
+        display: flex;
+    }
+    .horizontal-tabs--tab-content {
+        border-top-right-radius: $border-radius--primary;
+        &.tab-content-is-shown {
+            border-bottom-width: $border-width--primary;
+            border-radius: 0 $border-radius--primary $border-radius--primary $border-radius--primary;
+        }
+    }
+    .horizontal-tabs--tab-accordion {
+        display: none;
+    }
+}

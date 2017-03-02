@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+}
+
+// http://alistapart.com/article/axiomatic-css-and-lobotomized-owls
+* + * {
+    margin-top: $spacer;
+}
+
+@mixin margin--off {
+    > * {
+        margin-top: 0;
+    }
+}
+
+.margin--off {
+    @include margin--off;
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .margin--off--#{$breakpoint} {
+            @include margin--off;
+        }
+    }
+}

@@ -1,0 +1,68 @@
+@mixin input {
+    @include disabled;
+    display: block;
+    width: 100%;
+    padding: $spacer*.625;
+    color: $input-color;
+    background-color: $input-background-color;
+    background-image: none;
+    background-clip: padding-box;
+    border: $input-border-width solid $input-border-color;
+    border-radius: $input-border-radius;
+    font-family: $font-family--primary;
+    text-transform: none;
+    &::-moz-focus-inner,
+    &::-moz-focus-inner {
+        border: 0;
+        padding: 0;
+    }
+    &::-webkit-input-placeholder {
+        color: $input-placeholder-color;
+    }
+}
+
+@mixin radio {
+    @include disabled;
+    padding: 0;
+    margin: 0 $spacer*.125 0 0;
+    vertical-align: $spacer*.125;
+}
+
+@mixin checkbox {
+    @include disabled;
+    padding: 0;
+    margin: 0 $spacer*.125 0 0;
+    vertical-align: $spacer*.125;
+}
+
+@mixin input--focus {
+    border-color: $input-focus-color;
+    outline: none;
+}
+
+@mixin input--select-focus {
+    outline-color: $input-focus-color;
+}
+
+@mixin input--help {
+    font-size: $font-size--base*.875;
+    color: $gray;
+    margin-top: $spacer*.5;
+}
+
+@mixin input--validation {
+    border-color: $input-validation-border-color;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+@mixin field--validation {
+    display: block;
+    font-size: $font-size--base*.875;
+    color: $white;
+    background-color: $input-validation-background-color;
+    padding: $spacer*.5 $spacer*.75;
+    margin: 0;
+    border-bottom-left-radius: $input-border-radius;
+    border-bottom-right-radius: $input-border-radius;
+}

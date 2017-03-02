@@ -1,0 +1,16 @@
+.print--none {
+    @media print {
+        display: none;
+    }
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .print--none--#{$breakpoint} {
+            @media print {
+                display: none;
+            }
+        }
+    }
+}

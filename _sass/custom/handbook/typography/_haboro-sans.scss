@@ -1,0 +1,32 @@
+
+$font-path: '../../assets/fonts/haboro-sans/';
+
+@font-face {
+    font-family: 'HaboroSans-NorBolIt';
+    src: url('#{$font-path}/328895_0_0.woff2') format('woff2'), url('#{$font-path}/328895_0_0.woff') format('woff'), url('#{$font-path}/328895_0_0.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HaboroSans-NorBol';
+    src: url('#{$font-path}/328895_1_0.woff2') format('woff2'), url('#{$font-path}/328895_1_0.woff') format('woff'), url('#{$font-path}/328895_1_0.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HaboroSans-NorLig';
+    src: url('#{$font-path}/328895_2_0.woff2') format('woff2'), url('#{$font-path}/328895_2_0.woff') format('woff'), url('#{$font-path}/328895_2_0.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HaboroSans-NorLigIt';
+    src: url('#{$font-path}/328895_3_0.woff2') format('woff2'), url('#{$font-path}/328895_3_0.woff') format('woff'), url('#{$font-path}/328895_3_0.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HaboroSans-NorReg';
+    src: url('#{$font-path}/328895_4_0.woff2') format('woff2'), url('#{$font-path}/328895_4_0.woff') format('woff'), url('#{$font-path}/328895_4_0.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HaboroSans-NorRegIt';
+    src: url('#{$font-path}/328895_5_0.woff2') format('woff2'), url('#{$font-path}/328895_5_0.woff') format('woff'), url('#{$font-path}/328895_5_0.ttf') format('truetype');
+}

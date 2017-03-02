@@ -1,0 +1,21 @@
+
+@mixin input--validation {
+    border-color: $input-validation-border-color;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+
+    &:focus {
+        border-color: $input-validation-border-color;
+    }
+}
+
+@mixin field--validation {
+    display: block;
+    font-size: $font-size--base*.875;
+    color: $white;
+    background-color: $input-validation-background-color;
+    padding: $spacer*.5 $spacer*.75;
+    margin: 0;
+    border-bottom-left-radius: $input-border-radius;
+    border-bottom-right-radius: $input-border-radius;
+}

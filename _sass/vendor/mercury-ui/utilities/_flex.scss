@@ -1,0 +1,16 @@
+@mixin flex-direction--column {
+    flex-direction: column;
+}
+
+.flex-direction--column {
+    @include flex-direction--column;
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .flex-direction--column--#{$breakpoint} {
+            @include flex-direction--column;
+        }
+    }
+}

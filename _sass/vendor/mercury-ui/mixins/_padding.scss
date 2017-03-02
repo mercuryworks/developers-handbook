@@ -1,0 +1,28 @@
+
+@mixin padding {
+    padding: $spacer;
+
+    @media (min-width:map-get($breakpoints, xs)) {
+        padding: $spacer*1.5;
+    }
+
+    @media (min-width:map-get($breakpoints, sm)) {
+        padding: $spacer*2;
+    }
+
+    @media (min-width:map-get($breakpoints, md)) {
+        padding: $spacer*2.5;
+    }
+
+    @media (min-width:map-get($breakpoints, lg)) {
+        padding: $spacer*3;
+    }
+
+    @media (min-width:map-get($breakpoints, xl)) {
+        padding: $spacer*3.5;
+    }
+
+    @media (min-width:map-get($breakpoints, xxl)) {
+        padding: $spacer*4;
+    }
+}

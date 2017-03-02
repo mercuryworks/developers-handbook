@@ -1,0 +1,128 @@
+@mixin table-overflow {
+    width: 100%;
+    overflow-y: auto;
+    margin-top: 0;
+    border: $border--primary $gray--lightest;
+    >.table {
+        border: 0;
+    }
+}
+
+@mixin table-block {
+    border-top: 0;
+    .table--header,
+    .table--body,
+    .table--row,
+    .table--header-cell,
+    .table--cell {
+        display: block;
+        margin-top: 0;
+    }
+    .table--header {
+        @include sr-only;
+    }
+    .table--row {
+        &:nth-child(odd) {
+            background-color: lighten($gray--lightest, 5%);
+        }
+    }
+    .table--cell {
+        &:before {
+            @include for-sm-up {
+                display: inline-block;
+                width: 50%;
+            }
+            content: attr(data-table-header);
+            display: block;
+            width: 100%;
+            padding: 0 $spacer 0 0;
+            font-family: $font-family--bold;
+            font-weight: $font-weight--bold;
+        }
+    }
+}
+
+@mixin table-fixed {
+    display: block;
+    border-top: 0;
+    background-color: lighten($gray--lightest, 5%);
+    .table--header,
+    .table--body,
+    .table--header-cell,
+    .table--cell {
+        display: block;
+    }
+    .table--header {
+        float: left;
+        .table--row {
+            display: inline-block;
+            margin: 0;
+        }
+    }
+    .table--header-cell {
+        border-top: $border-width--primary $border-style--primary $gray--lightest;
+    }
+    .table--body {
+        background-color: $content-background-color--default;
+        border-right-style: solid;
+        border-right-width: 10px;
+        border-image: linear-gradient(to left, rgba($black, .15), rgba($black, 0)) 1 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        width: auto;
+        white-space: nowrap;
+        margin: 0;
+        .table--row {
+            display: inline-block;
+            margin: 0 -5px 0 0;
+        }
+    }
+    .table--header-cell,
+    .table--cell {
+        margin-top: 0;
+    }
+}
+
+@mixin back-to-table {
+    display: table;
+    border: $border--primary $gray--lightest;
+    background-color: $content-background-color--default;
+    .table--header {
+        @include sr-undo;
+        display: table-header-group;
+        float: none;
+        .table--row {
+            display: table-row;
+            margin: inherit;
+        }
+    }
+    .table--header-cell {
+        display: table-cell;
+        border-top: 0;
+    }
+    .table--body {
+        display: table-row-group;
+        overflow: visible;
+        white-space: normal;
+        border-right: 0;
+        margin: inherit;
+        .table--row {
+            display: table-row;
+            margin: inherit;
+        }
+    }
+    .table--footer {
+        display: table-footer-group;
+    }
+    .table--row {
+        &:nth-child(odd) {
+            background-color: inherit;
+        }
+    }
+    .table--cell {
+        display: table-cell;
+        &:before {
+            content: none;
+        }
+    }
+}

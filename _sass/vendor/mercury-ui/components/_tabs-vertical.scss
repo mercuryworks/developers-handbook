@@ -1,0 +1,107 @@
+// Vertical tabs
+.vertical-tabs {
+    display: block;
+    width: 100%;
+}
+
+.vertical-tabs--tab-list {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    flex: 1 1 auto;
+}
+
+.vertical-tabs--tab-list-item {
+    border-top: $border-width--primary $border-style--primary $gray--lighter;
+    border-left: $border-width--primary $border-style--primary $gray--lighter;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    &:first-child {
+        border-top-left-radius: $border-radius--primary;
+    }
+    &:last-child {
+        border-bottom: $border-width--primary $border-style--primary $gray--lighter;
+        border-bottom-left-radius: $border-radius--primary;
+    }
+    &.tab-is-active {
+        margin-right: -($border-width--primary);
+    }
+}
+
+.vertical-tabs--tab {
+    @include button;
+    @include button-color--lighten($color--default, $color--default, $gray--lightest, lighten($gray--lightest, 5%), $gray--lighter, $gray--lighter);
+    display: block;
+    width: 100%;
+    text-align: left;
+    border: 0;
+    border-radius: 0;
+    .tab-is-active & {
+        background-color: $white;
+        cursor: default;
+    }
+}
+
+.vertical-tabs--tab-contents {
+    margin: 0;
+    width: 100%;
+}
+
+.vertical-tabs--tab-content {
+    @include for-lg-up {
+        padding: $spacer*2;
+    }
+    display: none;
+    width: 100%;
+    background-color: $white;
+    border: $border-width--primary $border-style--primary $gray--lighter;
+    border-radius: 0;
+    padding: $spacer;
+    margin: 0;
+    &.tab-content-is-shown {
+        display: block;
+        border-bottom-width: 0;
+        &:last-child {
+            border-bottom-width: $border-width--primary;
+            border-radius: 0 0 $border-radius--primary $border-radius--primary;
+        }
+    }
+}
+
+.vertical-tabs--tab-accordion {
+    @include button;
+    @include button-color--lighten($color--default, $color--default, $gray--lightest, lighten($gray--lightest, 5%), $gray--lighter, $gray--lighter);
+    display: block;
+    width: 100%;
+    text-align: left;
+    border-width: $border-width--primary;
+    border-bottom-width: 0;
+    border-radius: 0;
+    margin: 0;
+    &:first-child {
+        border-radius: $border-radius--primary $border-radius--primary 0 0;
+    }
+    &:nth-last-child(2) {
+        border-width: $border-width--primary;
+        border-radius: 0 0 $border-radius--primary $border-radius--primary;
+    }
+    &.tab-is-active {
+        background-color: $white;
+        border-bottom: 0;
+        cursor: default;
+        &:nth-last-child(2) {
+            border-radius: 0;
+        }
+    }
+}
+
+@each $breakpoint,
+$width in $breakpoints {
+    @media (min-width:#{$width}) {
+        .vertical-tabs--#{$breakpoint} {
+            @include vertical-tabs;
+        }
+    }
+}

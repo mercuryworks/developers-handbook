@@ -1,0 +1,10 @@
+@mixin accordion-color($color, $background-color, $border-color) {
+    border-color: $border-color;
+    .accordion--content {
+        background-color: $background-color;
+        color: $color;
+    }
+    .accordion--content-inner {
+        border-color: $border-color;
+    }
+}

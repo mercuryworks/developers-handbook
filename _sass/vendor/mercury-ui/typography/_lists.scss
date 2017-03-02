@@ -1,0 +1,12 @@
+ol,
+ul {
+  padding-left: $spacer*2;
+}
+
+li {
+  margin: 0;
+}
+
+.list-style--none {
+  @include list-style--none; // ~/mixins/_lists.scss
+}

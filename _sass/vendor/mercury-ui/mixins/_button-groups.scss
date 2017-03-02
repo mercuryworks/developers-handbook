@@ -1,0 +1,21 @@
+@mixin button-group {
+    display: flex;
+    flex-wrap: wrap;
+    > * {
+        margin-top: 0;
+    }
+    .button {
+        border-left-width: 0;
+        border-radius: 0;
+
+        &:first-child {
+            border-left-width: $border-width--primary;
+            border-top-left-radius: $border-radius--primary;
+            border-bottom-left-radius: $border-radius--primary;
+        }
+        &:last-child {
+            border-top-right-radius: $border-radius--primary;
+            border-bottom-right-radius: $border-radius--primary;
+        }
+    }
+}

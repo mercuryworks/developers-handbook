@@ -1,0 +1,13 @@
+@mixin dropdown-max-width($breakpoint) {
+    @if (map-has-key($breakpoints, $breakpoint) == true) {
+        max-width: map-get($breakpoints, $breakpoint) - $font-size--root*2;
+    }
+}
+
+@mixin dropdown--right {
+    right: 0;
+    left: auto;
+    text-align: right;
+    border-left-width: 0;
+    border-right-width: 1px;
+}

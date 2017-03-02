@@ -1,0 +1,79 @@
+
+.badge {
+    border-radius: $border-radius--primary;
+    font-size: $font-size--base*.75;
+    padding: $spacer*.25 $spacer *.5;
+    background-color: $gray--lightest;
+    color: $black;
+    vertical-align: 2px;
+}
+
+.badge--left {
+    margin-right: $spacer*.25;
+}
+
+.badge--right {
+    margin-left: $spacer*.25;
+}
+
+.badge--white {
+    @include badge-color($black,$white);
+}
+
+.badge-error, .badge--error-color {
+    @include badge-color($white,$error-color);
+}
+
+.badge--warning, .badge--warning-color {
+    @include badge-color($white,$warning-color);
+}
+
+.badge--success, .badge--success-color {
+    @include badge-color($white,$success-color);
+}
+
+.badge--info, .badge--info-color {
+    @include badge-color($white,$info-color);
+}
+
+.badge--primary-color {
+    @include badge-color($white,$primary-color);
+}
+
+.badge--secondary-color {
+    @include badge-color($white,$secondary-color);
+}
+
+.badge--tertiary-color {
+    @include badge-color($white,$tertiary-color);
+}
+
+.badge--small {
+    font-size: $font-size--base*.625;
+    padding: $spacer*.25 $spacer *.375;
+}
+
+.badge--smaller {
+    font-size: $font-size--base*.5;
+    padding: $spacer*.25 $spacer *.375;
+}
+
+.badge--smallest {
+    font-size: $font-size--base*.375;
+    padding: $spacer*.25 $spacer *.375;
+}
+
+.badge--large {
+    font-size: $font-size--base*1.125;
+    padding: $spacer*.25 $spacer *.625;
+}
+
+.badge--larger {
+    font-size: $font-size--base*1.25;
+    padding: $spacer*.375 $spacer *.75;
+}
+
+.badge--largest {
+    font-size: $font-size--base*1.375;
+    padding: $spacer*.375 $spacer *.75;
+}

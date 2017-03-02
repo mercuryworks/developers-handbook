@@ -1,0 +1,4 @@
+<h6>Table Of Contents</h6>
+{% for post in site.posts %}
+      <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+{% endfor %}

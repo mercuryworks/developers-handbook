@@ -1,0 +1,86 @@
+.mega-menu--dropdown {
+    clear: both;
+    margin: $spacer 0 0;
+}
+
+.mega-menu--button {
+    display: block;
+    width: 100%;
+    text-align: left;
+    border: $border--primary transparent;
+    transition: border-color $transition--primary, background-color $transition--primary, color $transition--primary;
+    &:hover,
+    &:focus {
+        border-color: $gray--lightest;
+    }
+    .mega-menu-is-open & {
+        border-color: $gray--lightest;
+        border-bottom-color: transparent;
+    }
+}
+
+.mega-menu--dropdown-container {
+    display: none;
+    padding: $spacer;
+    width: 100%;
+    background-color: $white;
+    border: $border--primary $gray--lightest;
+    border-bottom-left-radius: $border-radius--primary;
+    border-bottom-right-radius: $border-radius--primary;
+    .mega-menu-is-open & {
+        display: block;
+    }
+    @if ($border-radius--primary==0) {
+        margin: -($border-width--primary) 0 0;
+        border-top-width: 0;
+    }
+    @else {
+        margin: 0;
+    }
+    a {
+        padding: $spacer*.5;
+    }
+}
+
+.arrow {
+    .mega-menu-is-open & {
+        border-top: 0;
+        border-bottom: 5px solid $black;
+    }
+}
+
+.mega-menu--md {
+    @include for-md-up {
+        @include mega-menu;
+    }
+}
+
+.mega-menu--lg {
+    @include for-lg-up {
+        @include mega-menu;
+    }
+}
+
+.mega-menu--xl {
+    @include for-xl-up {
+        @include mega-menu;
+    }
+}
+
+.mega-menu--xxl {
+    @include for-xxl-up {
+        @include mega-menu;
+    }
+}
+
+.mega-menu--primary-color {
+    @include mega-menu-color($primary-color--inverse, darken($primary-color--inverse, 15%), $primary-color, $primary-color--darkest);
+}
+
+.mega-menu--secondary-color {
+    @include mega-menu-color($secondary-color--inverse, darken($primary-color--inverse, 15%), $secondary-color, $secondary-color--darkest);
+}
+
+.mega-menu--tertiary-color {
+    @include mega-menu-color($tertiary-color--inverse, darken($primary-color--inverse, 15%), $tertiary-color, $tertiary-color--darkest);
+}

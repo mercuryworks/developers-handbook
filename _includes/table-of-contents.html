@@ -1,9 +1,15 @@
-<h6>Table Of Contents</h6>
-{% assign posts = (site.posts | sort: 'order') %}
-{% for post in posts %}
-      {% if post.child == true %}
-            <a class="display--block is-child" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-      {% else %}
-            <a class="display--block" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-      {% endif %}
-{% endfor %}
+<div class="card">
+    <div class="card--header card--padding">
+        <h6>Table Of Contents</h6>
+    </div>
+    <div class="card--content card--padding">
+      {% assign posts = (site.posts | sort: 'order') %}
+      {% for post in posts %}
+            {% if post.child == true %}
+                  <a class="display--block is-child" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            {% else %}
+                  <a class="display--block" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            {% endif %}
+      {% endfor %}
+    </div>
+</div>

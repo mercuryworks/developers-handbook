@@ -12,5 +12,7 @@
       {% include footer.html %}
       <div class="overlay"></div>
     </div>
+    <script src="{{ "/assets/js/vendor/clipboard.min.js" | relative_url }}"></script>
+    <script>new Clipboard('.button--copy');</script>
   </body>
 </html>

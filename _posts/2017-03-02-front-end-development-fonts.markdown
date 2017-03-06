@@ -3,7 +3,7 @@ layout: post
 title: "Fonts"
 author: Zachary Winnie, Senior Interface Designer
 date: 2017-03-02 10:36:00 -0500
-lastUpdated: 2017-03-02 13:42:00 -0500;
+lastUpdated: 2017-03-06 16:01:00 -0500;
 categories: front-end-development fonts
 permalink: /front-end-development/fonts
 order: 70.20
@@ -19,45 +19,49 @@ Note: Don't bother including eot or svg font file types anymore unless you need 
 
 ### CSS
 
-{% highlight ruby %}
-@font-face {
+<div id="font-css">
+  {% highlight ruby %}@font-face {
   font-family: 'Open Sans';
-  src: url('/fonts/open-sans/opensans.woff2') format('woff2'),
-       url('/fonts/open-sans/opensans.woff') format('woff'),
-       url('/fonts/open-sans/opensans.ttf') format('truetype');
-}
-{% endhighlight %}
+  src:  url('/fonts/open-sans/opensans.woff2') format('woff2'),
+        url('/fonts/open-sans/opensans.woff') format('woff'),
+        url('/fonts/open-sans/opensans.ttf') format('truetype');
+}{% endhighlight %}
+</div>
+<button type="button" class="button button--white button--smallest button--copy" data-clipboard-target="#font-css">Copy Code</button>
 
 Using the font to style elements:
 
-{% highlight ruby %}
-body {
+<div id="font-css-body">
+  {% highlight ruby %}body {
   font-family: 'Open Sans', sans-serif;
-}
-{% endhighlight %}
+}{% endhighlight %}
+</div>
+<button type="button" class="button button--white button--smallest button--copy" data-clipboard-target="#font-css-body">Copy Code</button>
 
 ### SASS/SCSS
 
-{% highlight ruby %}
-$open-sans: 'Open Sans';
+<div id="font-sass">
+{% highlight ruby %}$open-sans: 'Open Sans';
 $open-sans-path: '/fonts/open-sans/';
 @font-face {
   font-family: $open-sans;
-  src: url('#{$open-sans-path}opensans.woff2') format('woff2'),
-       url('#{$open-sans-path}opensans.woff') format('woff'),
-       url('#{$open-sans-path}opensans.ttf') format('truetype');
+  src:  url('#{$open-sans-path}opensans.woff2') format('woff2'),
+        url('#{$open-sans-path}opensans.woff') format('woff'),
+        url('#{$open-sans-path}opensans.ttf') format('truetype');
 }
 // Global variable (avoid using $open-sans across your SASS code, abstract it out so it is easy to change)
-$font-family--primary: 'Open Sans', sans-serif;
-{% endhighlight %}
+$font-family--primary: 'Open Sans', sans-serif;{% endhighlight %}
+</div>
+<button type="button" class="button button--white button--smallest button--copy" data-clipboard-target="#font-sass">Copy Code</button>
 
 Using the font to style elements in SASS:
 
-{% highlight ruby %}
-body {
+<div id="font-sass-body">
+{% highlight ruby %}body {
   font-family: $font-family--primary;
-}
-{% endhighlight %}
+}{% endhighlight %}
+</div>
+<button type="button" class="button button--white button--smallest button--copy" data-clipboard-target="#font-sass-body">Copy Code</button>
 
 ### Resources
 More about using @font-face: [https://css-tricks.com/snippets/css/using-font-face/](https://css-tricks.com/snippets/css/using-font-face/).
@@ -88,9 +92,10 @@ More on using system fonts: [https://www.smashingmagazine.com/2015/11/using-syst
 
 The preferred method for using Google Fonts is by linking the stylesheet via the `<link>` tag:
 
-{% highlight ruby %}
-<link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-{% endhighlight %}
+<div id="font-google">
+{% highlight ruby %}<link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>{% endhighlight %}
+</div>
+<button type="button" class="button button--white button--smallest button--copy" data-clipboard-target="#font-google">Copy Code</button>
 
 ### Typekit
 
@@ -102,8 +107,8 @@ You'll need to have IIS configured with MIME types for the font files you're usi
 
 Instead of messing with IIS, you can also add the following declarations to the web.config file of your project:
 
-{% highlight ruby %}
-<system.webServer> 
+<div id="font-config">
+{% highlight ruby %}<system.webServer> 
   <staticContent> 
     <remove fileExtension=".eot" /> 
     <mimeMap fileExtension=".eot" mimeType="application/vnd.ms-fontobject" /> 
@@ -116,5 +121,6 @@ Instead of messing with IIS, you can also add the following declarations to the 
     <remove fileExtension=".svg" /> 
     <mimeMap fileExtension=".svg" mimeType="image/svg+xml" /> 
   </staticContent> 
-</system.webServer>
-{% endhighlight %}
+</system.webServer>{% endhighlight %}
+</div>
+<button type="button" class="button button--white button--smallest button--copy" data-clipboard-target="#font-config">Copy Code</button>

@@ -7,12 +7,12 @@ layout: default
       <h1 class="post-title" itemprop="name headline">{{ page.title | escape }}</h1>
         {% if page.date %}
         <p class="post-meta">
-          Added <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>
+          Added <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y at %r" }}</time>
         </p>
         {% endif %}
         {% if page.lastUpdated %}
         <p class="post-meta">
-          Updated <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.lastUpdated | date: "%B %-d, %Y" }}</time>
+          Updated <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.lastUpdated | date: "%B %-d, %Y at %r" }}</time>
         </p>
         {% endif %}
         {% if page.author %}

@@ -6,7 +6,8 @@ date: 2017-03-02 10:36:00 -0500
 lastUpdated: 2017-03-02 13:42:00 -0500;
 categories: front-end-development fonts
 permalink: /front-end-development/fonts
-order: 100
+order: 70.20
+child: true
 ---
 ## Browser Support
 

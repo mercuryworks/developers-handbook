@@ -1,4 +1,5 @@
 <h6>Table Of Contents</h6>
-{% for post in site.posts %}
+{% assign posts = (site.posts | sort: 'order') %}
+{% for post in posts %}
       <a class="display--block" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
 {% endfor %}

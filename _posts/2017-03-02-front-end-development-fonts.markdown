@@ -9,6 +9,10 @@ permalink: /front-end-development/fonts
 order: 70.20
 child: true
 ---
+{% if gitbook.version %}
+# Fonts
+{% endif %}
+
 ## Browser Support
 
 Minimum font file types to include are WOFF2 and WOFF. Add TTF and you've got good support as of 2017.

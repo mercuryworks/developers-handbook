@@ -7,7 +7,7 @@
 * [Code Tools](_posts/2017-03-06-code-tools.markdown)
 * [UX Design](_posts/2017-03-06-ux.markdown)
 * [UI Design](_posts/2017-03-06-ui.markdown)
-* [Front End Development](_posts/2017-03-06-back-end-development.markdown)
+* [Front End Development](_posts/2017-03-06-front-end-development.markdown)
   * [Favicons](_posts/2017-03-02-front-end-development-favicons.markdown)
   * [Fonts](_posts/2017-03-02-front-end-development-fonts.markdown)
   * [Icon Fonts](_posts/2017-03-02-front-end-development-icon-fonts.markdown)

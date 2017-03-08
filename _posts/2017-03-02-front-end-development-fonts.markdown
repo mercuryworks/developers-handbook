@@ -19,8 +19,7 @@ Note: Don't bother including eot or svg font file types anymore unless you need 
 
 ### CSS
 
-{% if gitbook.version %}
-```
+``` css
 @font-face {
   font-family: 'Open Sans';
   src:  url('/fonts/open-sans/opensans.woff2') format('woff2'),
@@ -28,36 +27,25 @@ Note: Don't bother including eot or svg font file types anymore unless you need 
         url('/fonts/open-sans/opensans.ttf') format('truetype');
 }
 ```
-{% else %}
-<div id="font-css">
-  {% highlight ruby %}@font-face {
-  font-family: 'Open Sans';
-  src:  url('/fonts/open-sans/opensans.woff2') format('woff2'),
-        url('/fonts/open-sans/opensans.woff') format('woff'),
-        url('/fonts/open-sans/opensans.ttf') format('truetype');
-}{% endhighlight %}
-</div>
-<button type="button" class="button button--white button--smallest button--copy" data-clipboard-target="#font-css">Copy Code</button>
-{% endif %}
+{% unless gitbook.version %}
+<button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
+{% endunless %}
 
 Using the font to style elements:
 
-{% if gitbook.version %}
-{% else %}
-<div id="font-css-body">
-  {% highlight ruby %}body {
+``` css
+body {
   font-family: 'Open Sans', sans-serif;
-}{% endhighlight %}
-</div>
-<button type="button" class="button button--white button--smallest button--copy" data-clipboard-target="#font-css-body">Copy Code</button>
-{% endif %}
+}
+```
+{% unless gitbook.version %}
+<button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
+{% endunless %}
 
 ### SASS/SCSS
 
-{% if gitbook.version %}
-{% else %}
-<div id="font-sass">
-{% highlight ruby %}$open-sans: 'Open Sans';
+``` scss
+$open-sans: 'Open Sans';
 $open-sans-path: '/fonts/open-sans/';
 @font-face {
   font-family: $open-sans;
@@ -66,22 +54,22 @@ $open-sans-path: '/fonts/open-sans/';
         url('#{$open-sans-path}opensans.ttf') format('truetype');
 }
 // Global variable (avoid using $open-sans across your SASS code, abstract it out so it is easy to change)
-$font-family--primary: 'Open Sans', sans-serif;{% endhighlight %}
-</div>
-<button type="button" class="button button--white button--smallest button--copy" data-clipboard-target="#font-sass">Copy Code</button>
-{% endif %}
+$font-family--primary: 'Open Sans', sans-serif;
+```
+{% unless gitbook.version %}
+<button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
+{% endunless %}
 
 Using the font to style elements in SASS:
 
-{% if gitbook.version %}
-{% else %}
-<div id="font-sass-body">
-{% highlight ruby %}body {
+``` scss
+body {
   font-family: $font-family--primary;
-}{% endhighlight %}
-</div>
-<button type="button" class="button button--white button--smallest button--copy" data-clipboard-target="#font-sass-body">Copy Code</button>
-{% endif %}
+}
+```
+{% unless gitbook.version %}
+<button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
+{% endunless %}
 
 ### Resources
 
@@ -113,13 +101,12 @@ More on using system fonts: [https://www.smashingmagazine.com/2015/11/using-syst
 
 The preferred method for using Google Fonts is by linking the stylesheet via the `<link>` tag:
 
-{% if gitbook.version %}
-{% else %}
-<div id="font-google">
-{% highlight ruby %}<link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>{% endhighlight %}
-</div>
-<button type="button" class="button button--white button--smallest button--copy" data-clipboard-target="#font-google">Copy Code</button>
-{% endif %}
+``` html
+<link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+```
+{% unless gitbook.version %}
+<button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
+{% endunless %}
 
 ### Typekit
 
@@ -131,10 +118,8 @@ You'll need to have IIS configured with MIME types for the font files you're usi
 
 Instead of messing with IIS, you can also add the following declarations to the web.config file of your project:
 
-{% if gitbook.version %}
-{% else %}
-<div id="font-config">
-{% highlight ruby %}<system.webServer> 
+``` xml
+<system.webServer> 
   <staticContent> 
     <remove fileExtension=".eot" /> 
     <mimeMap fileExtension=".eot" mimeType="application/vnd.ms-fontobject" /> 
@@ -147,7 +132,8 @@ Instead of messing with IIS, you can also add the following declarations to the 
     <remove fileExtension=".svg" /> 
     <mimeMap fileExtension=".svg" mimeType="image/svg+xml" /> 
   </staticContent> 
-</system.webServer>{% endhighlight %}
-</div>
-<button type="button" class="button button--white button--smallest button--copy" data-clipboard-target="#font-config">Copy Code</button>
-{% endif %}
+</system.webServer>
+```
+{% unless gitbook.version %}
+<button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
+{% endunless %}

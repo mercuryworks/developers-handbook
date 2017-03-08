@@ -19,7 +19,7 @@ Note: Don't bother including eot or svg font file types anymore unless you need 
 
 ### CSS
 
-{% if book.gitbook %}
+{% if gitbook.version %}
 ```
 @font-face {
   font-family: 'Open Sans';
@@ -42,7 +42,7 @@ Note: Don't bother including eot or svg font file types anymore unless you need 
 
 Using the font to style elements:
 
-{% if book.gitbook %}
+{% if gitbook.version %}
 {% else %}
 <div id="font-css-body">
   {% highlight ruby %}body {
@@ -54,7 +54,7 @@ Using the font to style elements:
 
 ### SASS/SCSS
 
-{% if book.gitbook %}
+{% if gitbook.version %}
 {% else %}
 <div id="font-sass">
 {% highlight ruby %}$open-sans: 'Open Sans';
@@ -73,7 +73,7 @@ $font-family--primary: 'Open Sans', sans-serif;{% endhighlight %}
 
 Using the font to style elements in SASS:
 
-{% if book.gitbook %}
+{% if gitbook.version %}
 {% else %}
 <div id="font-sass-body">
 {% highlight ruby %}body {
@@ -113,7 +113,7 @@ More on using system fonts: [https://www.smashingmagazine.com/2015/11/using-syst
 
 The preferred method for using Google Fonts is by linking the stylesheet via the `<link>` tag:
 
-{% if book.gitbook %}
+{% if gitbook.version %}
 {% else %}
 <div id="font-google">
 {% highlight ruby %}<link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>{% endhighlight %}
@@ -131,7 +131,7 @@ You'll need to have IIS configured with MIME types for the font files you're usi
 
 Instead of messing with IIS, you can also add the following declarations to the web.config file of your project:
 
-{% if book.gitbook %}
+{% if gitbook.version %}
 {% else %}
 <div id="font-config">
 {% highlight ruby %}<system.webServer> 

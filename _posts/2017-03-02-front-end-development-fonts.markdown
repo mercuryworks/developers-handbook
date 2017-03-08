@@ -9,7 +9,7 @@ permalink: /front-end-development/fonts
 order: 70.20
 child: true
 ---
-{% if gitbook.version %}
+{% if gitbook %}
 # Fonts
 {% endif %}
 
@@ -31,7 +31,7 @@ Note: Don't bother including eot or svg font file types anymore unless you need 
         url('/fonts/open-sans/opensans.ttf') format('truetype');
 }
 ```
-{% if gitbook.version %}
+{% if gitbook %}
 {% else %}
   <button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
 {% endif %}
@@ -43,7 +43,7 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 ```
-{% if gitbook.version %}
+{% if gitbook %}
 {% else %}
   <button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
 {% endif %}
@@ -63,7 +63,7 @@ $open-sans-path: '/fonts/open-sans/';
 // Global variable (avoid using $open-sans across your SASS code, abstract it out so it is easy to change)
 $font-family--primary: 'Open Sans', sans-serif;
 ```
-{% if gitbook.version %}
+{% if gitbook %}
 {% else %}
   <button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
 {% endif %}
@@ -75,7 +75,7 @@ body {
   font-family: $font-family--primary;
 }
 ```
-{% if gitbook.version %}
+{% if gitbook %}
 {% else %}
   <button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
 {% endif %}
@@ -113,7 +113,7 @@ The preferred method for using Google Fonts is by linking the stylesheet via the
 ``` html
 <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 ```
-{% if gitbook.version %}
+{% if gitbook %}
 {% else %}
   <button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
 {% endif %}
@@ -144,7 +144,7 @@ Instead of messing with IIS, you can also add the following declarations to the 
   </staticContent> 
 </system.webServer>
 ```
-{% if gitbook.version %}
+{% if gitbook %}
 {% else %}
   <button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
 {% endif %}

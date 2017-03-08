@@ -5,16 +5,12 @@
                 <img src="{{ "/assets/images/mercury-works-logo.svg" | relative_url}}" class="logo--image" alt="Mercury Works">
             </a>
         </div>
-        <nav class="off-canvas off-canvas--direction--right off-canvas--off--xxs margin--off">
-            <button type="button" class="button button--white button--small off-canvas--open-button off-canvas--open" aria-controls="off-canvas--menu--xxs">Menu</button>
-            <div class="off-canvas--menu" id="off-canvas--menu--xxs">
-                <button type="button" class="button button--white off-canvas--close-button off-canvas--close" aria-controls="off-canvas--menu--xxs">Close</button>
-                <a class="off-canvas--link" href="{{ "/" | relative_url}}">Home</a>
-                {% for page in site.pages %}
-                  {% if page.title %}
-                  <a class="off-canvas--link" href="{{ page.url | relative_url }}">{{ page.title | escape }}</a>
-                  {% endif %}
-                {% endfor %}
+        <nav class="off-canvas off-canvas--direction--right off-canvas--off--sm margin--off">
+            <button type="button" class="button button--white button--small off-canvas--open-button off-canvas--open" aria-controls="off-canvas--menu--sm">Menu</button>
+            <div class="off-canvas--menu" id="off-canvas--menu--sm">
+                <button type="button" class="button button--white off-canvas--close-button off-canvas--close" aria-controls="off-canvas--menu--sm">Close</button>
+                <a class="off-canvas--link" href="https://mercuryworks.github.io/developers-handbook/">Handbook GitHub Page</a>
+                <a class="off-canvas--link" href="https://mercury-works.gitbooks.io/developers-handbook/">Handbook GitBook</a>
             </div>
         </nav>
     </div>

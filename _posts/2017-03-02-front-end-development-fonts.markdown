@@ -19,6 +19,16 @@ Note: Don't bother including eot or svg font file types anymore unless you need 
 
 ### CSS
 
+{% if book.gitbook %}
+```
+@font-face {
+  font-family: 'Open Sans';
+  src:  url('/fonts/open-sans/opensans.woff2') format('woff2'),
+        url('/fonts/open-sans/opensans.woff') format('woff'),
+        url('/fonts/open-sans/opensans.ttf') format('truetype');
+}
+```
+{% else %}
 <div id="font-css">
   {% highlight ruby %}@font-face {
   font-family: 'Open Sans';
@@ -28,18 +38,24 @@ Note: Don't bother including eot or svg font file types anymore unless you need 
 }{% endhighlight %}
 </div>
 <button type="button" class="button button--white button--smallest button--copy" data-clipboard-target="#font-css">Copy Code</button>
+{% endif %}
 
 Using the font to style elements:
 
+{% if book.gitbook %}
+{% else %}
 <div id="font-css-body">
   {% highlight ruby %}body {
   font-family: 'Open Sans', sans-serif;
 }{% endhighlight %}
 </div>
 <button type="button" class="button button--white button--smallest button--copy" data-clipboard-target="#font-css-body">Copy Code</button>
+{% endif %}
 
 ### SASS/SCSS
 
+{% if book.gitbook %}
+{% else %}
 <div id="font-sass">
 {% highlight ruby %}$open-sans: 'Open Sans';
 $open-sans-path: '/fonts/open-sans/';
@@ -53,17 +69,22 @@ $open-sans-path: '/fonts/open-sans/';
 $font-family--primary: 'Open Sans', sans-serif;{% endhighlight %}
 </div>
 <button type="button" class="button button--white button--smallest button--copy" data-clipboard-target="#font-sass">Copy Code</button>
+{% endif %}
 
 Using the font to style elements in SASS:
 
+{% if book.gitbook %}
+{% else %}
 <div id="font-sass-body">
 {% highlight ruby %}body {
   font-family: $font-family--primary;
 }{% endhighlight %}
 </div>
 <button type="button" class="button button--white button--smallest button--copy" data-clipboard-target="#font-sass-body">Copy Code</button>
+{% endif %}
 
 ### Resources
+
 More about using @font-face: [https://css-tricks.com/snippets/css/using-font-face/](https://css-tricks.com/snippets/css/using-font-face/).
 
 ## Performance And Webfonts
@@ -92,10 +113,13 @@ More on using system fonts: [https://www.smashingmagazine.com/2015/11/using-syst
 
 The preferred method for using Google Fonts is by linking the stylesheet via the `<link>` tag:
 
+{% if book.gitbook %}
+{% else %}
 <div id="font-google">
 {% highlight ruby %}<link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>{% endhighlight %}
 </div>
 <button type="button" class="button button--white button--smallest button--copy" data-clipboard-target="#font-google">Copy Code</button>
+{% endif %}
 
 ### Typekit
 
@@ -107,6 +131,8 @@ You'll need to have IIS configured with MIME types for the font files you're usi
 
 Instead of messing with IIS, you can also add the following declarations to the web.config file of your project:
 
+{% if book.gitbook %}
+{% else %}
 <div id="font-config">
 {% highlight ruby %}<system.webServer> 
   <staticContent> 
@@ -124,3 +150,4 @@ Instead of messing with IIS, you can also add the following declarations to the 
 </system.webServer>{% endhighlight %}
 </div>
 <button type="button" class="button button--white button--smallest button--copy" data-clipboard-target="#font-config">Copy Code</button>
+{% endif %}

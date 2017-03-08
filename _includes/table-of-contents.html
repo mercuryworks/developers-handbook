@@ -7,6 +7,8 @@
       {% for post in posts %}
             {% if post.child == true %}
                   <a class="display--block is-child" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            {% elsif post.subchild == true %}
+                  <a class="display--block is-subchild" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
             {% else %}
                   <a class="display--block" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
             {% endif %}

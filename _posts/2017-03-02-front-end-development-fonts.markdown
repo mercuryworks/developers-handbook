@@ -27,7 +27,10 @@ Note: Don't bother including eot or svg font file types anymore unless you need 
         url('/fonts/open-sans/opensans.ttf') format('truetype');
 }
 ```
-<button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
+{% if gitbook.version %}
+{% else %}
+  <button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
+{% endif %}
 
 Using the font to style elements:
 
@@ -56,7 +59,10 @@ $open-sans-path: '/fonts/open-sans/';
 // Global variable (avoid using $open-sans across your SASS code, abstract it out so it is easy to change)
 $font-family--primary: 'Open Sans', sans-serif;
 ```
-<button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
+{% if gitbook.version %}
+{% else %}
+  <button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
+{% endif %}
 
 Using the font to style elements in SASS:
 
@@ -65,7 +71,10 @@ body {
   font-family: $font-family--primary;
 }
 ```
-<button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
+{% if gitbook.version %}
+{% else %}
+  <button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
+{% endif %}
 
 ### Resources
 
@@ -100,7 +109,10 @@ The preferred method for using Google Fonts is by linking the stylesheet via the
 ``` html
 <link href='//fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 ```
-<button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
+{% if gitbook.version %}
+{% else %}
+  <button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
+{% endif %}
 
 ### Typekit
 
@@ -128,4 +140,7 @@ Instead of messing with IIS, you can also add the following declarations to the 
   </staticContent> 
 </system.webServer>
 ```
-<button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
+{% if gitbook.version %}
+{% else %}
+  <button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
+{% endif %}

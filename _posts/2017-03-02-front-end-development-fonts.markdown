@@ -36,7 +36,11 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 ```
-<button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
+{% if gitbook.version %}
+{% else %}
+  <button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
+{% endif %}
+
 
 ### SASS/SCSS
 

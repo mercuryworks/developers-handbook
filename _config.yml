@@ -17,8 +17,8 @@ title: Mercury Works Developer Handbook
 email: info@mercury.works
 description: > # this means to ignore newlines until "baseurl:"
   Design, Develop, Craft & Ship
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/developers-handbook" # the subpath of your site, e.g. /blog
+url: "https://mercuryworks.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: mercuryworks
 github_username:  mercuryworks
 permalink: /:categories/:title

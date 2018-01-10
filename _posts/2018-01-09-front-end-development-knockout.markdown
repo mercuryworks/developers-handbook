@@ -13,3 +13,12 @@ child: true
 ## Homepage
 
 [http://knockoutjs.com/](http://knockoutjs.com/)
+
+## Docs
+[http://knockoutjs.com/documentation/introduction.html](http://knockoutjs.com/documentation/introduction.html)
+
+## Examples
+[http://knockoutjs.com/examples/](http://knockoutjs.com/examples/)
+
+## Browser Support
+[http://knockoutjs.com/documentation/browser-support.html](http://knockoutjs.com/documentation/browser-support.html)

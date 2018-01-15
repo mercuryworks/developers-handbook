@@ -4,7 +4,7 @@ title: "Fonts"
 author: Zachary Winnie
 authorTitle: Senior Interface Designer
 date: 2017-03-02 10:36:00 -0500
-lastUpdated: 2017-03-06 16:01:00 -0500;
+lastUpdated: 2018-01-14 20:02:00 -0500;
 categories: front-end-development fonts
 permalink: /front-end-development/fonts
 order: 70.20
@@ -16,9 +16,9 @@ child: true
 
 ## Browser Support
 
-Minimum font file types to include are WOFF2 and WOFF. Add TTF and you've got good support as of 2017.
+Font file types to use are WOFF2 and WOFF.
 
-Note: Don't bother including eot or svg font file types anymore unless you need very deep browser support for old IE and iOS.
+Note: Don't bother with TTF, SVG, or EOT unless you need very deep browser support for old IE and iOS.
 
 ## Font Code
 
@@ -28,8 +28,7 @@ Note: Don't bother including eot or svg font file types anymore unless you need 
 @font-face {
   font-family: 'Open Sans';
   src:  url('/fonts/open-sans/opensans.woff2') format('woff2'),
-        url('/fonts/open-sans/opensans.woff') format('woff'),
-        url('/fonts/open-sans/opensans.ttf') format('truetype');
+        url('/fonts/open-sans/opensans.woff') format('woff');
 }
 ```
 {% if gitbook %}
@@ -58,8 +57,7 @@ $open-sans-path: '/fonts/open-sans/';
 @font-face {
   font-family: $open-sans;
   src:  url('#{$open-sans-path}opensans.woff2') format('woff2'),
-        url('#{$open-sans-path}opensans.woff') format('woff'),
-        url('#{$open-sans-path}opensans.ttf') format('truetype');
+        url('#{$open-sans-path}opensans.woff') format('woff');
 }
 // Global variable (avoid using $open-sans across your SASS code, abstract it out so it is easy to change)
 $font-family--primary: 'Open Sans', sans-serif;

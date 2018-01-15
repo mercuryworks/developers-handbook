@@ -28,4 +28,12 @@ child: true
 [http://knockoutjs.com/examples/](http://knockoutjs.com/examples/)
 
 ## Browser Support
-[http://knockoutjs.com/documentation/browser-support.html](http://knockoutjs.com/documentation/browser-support.html)
+* Firefox (current)
+* Chrome (current)
+* Edge (current)
+* IE (6+)
+* Safari Mac (current)
+* Safari iOS (6+)
+* Opera (current)
+
+More: [http://knockoutjs.com/documentation/browser-support.html](http://knockoutjs.com/documentation/browser-support.html)

@@ -11,14 +11,14 @@ layout: default
         </p>
         {% endif %}
         {% if page.lastUpdated %}
-        <p class="post-meta">
+        <p class="post-meta margin--none">
           Updated <time datetime="{{ page.date | date: "%B %e, %Y" }}" itemprop="datePublished">{{ page.lastUpdated | date: "%B %e, %Y at %l:%M %P" }}</time>
         </p>
         {% endif %}
         {% if page.author %}
         <p>
           <img class="author--image" src="http://mercurynewmedia.com/images/default-source/profile-images/{{ page.author | replace: ' ', '' | downcase }}.jpg" alt="{{ page.author }}" />
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>, {{ page.authorTitle }}
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">{{ page.author }}</span>{% if page.authorTitle %}<span>, {{ page.authorTitle }}</span>{% endif %}
         </p>
         {% endif %}
     </div>

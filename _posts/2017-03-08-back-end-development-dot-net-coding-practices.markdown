@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Coding Practices"
-author: Kyle Jones, Principle Application Developer
+author: Kyle Jones
+authorTitle: Principle Application Developer
 date: 2017-03-08 07:26:00 -0500
 lastUpdated: 2017-03-08 07:26:00 -0500
 categories: back-end-development dotnet coding-practices

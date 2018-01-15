@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Functional Tests"
-author: Matt Condor, Associate Application Developer
+author: Matt Condor
+authorTitle: Application Developer
 date: 2017-03-09 
 lastUpdated: 2017-03-09
 categories: testing

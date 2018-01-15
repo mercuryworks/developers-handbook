@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Icon Fonts"
-author: Zachary Winnie, Senior Interface Designer
+author: Zachary Winnie
+authorTitle: Senior Interface Designer
 date: 2017-03-07 17:57:00 -0500
 lastUpdated: 2017-03-07 17:57:00 -0500;
 categories: front-end-development fonts icon-fonts

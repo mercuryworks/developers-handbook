@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "HTML"
-author: Zachary Winnie, Senior Interface Designer
+author: Zachary Winnie
+authorTitle: Senior Interface Designer
 date: 2018-01-10 19:56:00 -0500
 lastUpdated: 2018-01-10 19:56:00 -0500;
 categories: front-end-development html

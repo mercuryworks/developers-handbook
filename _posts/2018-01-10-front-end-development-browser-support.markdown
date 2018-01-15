@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Browser Support"
-author: Zachary Winnie, Senior Interface Designer
+author: Zachary Winnie
+authorTitle: Senior Interface Designer
 date: 2018-01-10 19:32:00 -0500
 lastUpdated: 2018-01-10 19:32:00 -0500;
 categories: front-end-development browser support testing

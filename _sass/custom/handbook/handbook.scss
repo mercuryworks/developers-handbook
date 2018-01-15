@@ -8,3 +8,12 @@
 
 // Components
 @import 'components/_table-of-contents.scss';
+
+.author--image  {
+    width: $spacer*2;
+    border-radius: 50%;
+    border: 1px solid $white;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: $spacer*.25;
+}

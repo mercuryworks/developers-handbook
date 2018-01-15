@@ -17,7 +17,8 @@ layout: default
         {% endif %}
         {% if page.author %}
         <p>
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>
+          <img class="author--image" src="http://mercurynewmedia.com/images/default-source/profile-images/{{ page.author | replace: ' ', '' | downcase }}.jpg" alt="{{ page.author }}" />
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>, {{ page.authorTitle }}
         </p>
         {% endif %}
     </div>

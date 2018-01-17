@@ -253,3 +253,6 @@ A good indication of how a screen reader will speak content on your site is to v
 ## Continued Learning
 
 * [Web Accessibility Tips And Tricks](http://mercurynewmedia.com/blog/blog-archive/mercury-new-media-blog/2015/12/17/web-accessibility-tips-and-tricks)
+* [GitHub Web Accessibility Collection](https://github.com/collections/web-accessibility)
+* [Writing CSS With Accessibility In Mind](https://medium.com/@matuzo/writing-css-with-accessibility-in-mind-8514a0007939)
+* [Writing JS With Accessibility In Mind](https://medium.com/@matuzo/writing-javascript-with-accessibility-in-mind-a1f6a5f467b9)

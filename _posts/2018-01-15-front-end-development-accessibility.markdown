@@ -15,7 +15,25 @@ child: true
 
 The following CSS class hides content from the UI but allows screen readers to access/speak text.
 
-<script src="https://gist.github.com/zwinnie/c06116360740b90a8ed668e26d4efec6.js"></script>
+``` css
+.sr-only {
+  border: 0;
+  clip: rect(0,0,0,0);
+  clip-path: inset(1px);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  visibility: hidden;
+  white-space: nowrap;
+  width: 1px;
+}
+```
+{% if gitbook %}
+{% else %}
+  <button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
+{% endif %}
 
 ## Skip To Content & Navigation
 

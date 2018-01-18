@@ -27,3 +27,6 @@ Manual minification:
 Automated with Node.js: [https://github.com/kangax/html-minifier](https://github.com/kangax/html-minifier){:target="_blank"}
 
 Automated with Gulp: [https://github.com/jonschlinkert/gulp-htmlmin](https://github.com/jonschlinkert/gulp-htmlmin){:target="_blank"}
+
+## Resources
+* [HTML elements reference](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)

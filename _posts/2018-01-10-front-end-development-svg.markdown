@@ -3,8 +3,8 @@ layout: post
 title: "SVG"
 author: Zachary Winnie
 authorTitle: Senior Interface Designer
-date: 2018-01-10 09:45:00 -0500
-lastUpdated: 2018-01-10 09:45:00 -0500;
+date: 2018-01-10 09:45:00;
+lastUpdated: 2018-01-10 09:45:00;
 categories: front-end-development svg
 permalink: /front-end-development/svg
 order: 70.30

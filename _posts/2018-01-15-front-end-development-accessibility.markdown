@@ -3,8 +3,8 @@ layout: post
 title: "Accessibility"
 author: Zachary Winnie
 authorTitle: Senior Interface Designer
-date: 2018-01-15 18:31:00 -0500
-lastUpdated: 2018-01-16 22:54:00 -0500;
+date: 2018-01-15 18:31:00;
+lastUpdated: 2018-01-16 22:54:00;
 categories: front-end-development accessibility
 permalink: /front-end-development/accessibility
 order: 70.30

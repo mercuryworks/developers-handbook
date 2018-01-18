@@ -3,8 +3,8 @@ layout: post
 title: "Favicons"
 author: Zachary Winnie
 authorTitle: Senior Interface Designer
-date: 2017-03-02 10:36:00 -0500
-lastUpdated: 2017-03-02 13:42:00 -0500;
+date: 2017-03-02 10:36:00;
+lastUpdated: 2017-03-02 13:42:00;
 categories: front-end-development favicons
 permalink: /front-end-development/favicons
 order: 70.10

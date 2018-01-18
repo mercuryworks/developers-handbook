@@ -3,8 +3,8 @@ layout: post
 title: "Internet Explorer"
 author: Zachary Winnie
 authorTitle: Senior Interface Designer
-date: 2018-01-10 19:41:00 -0500
-lastUpdated: 2018-01-10 19:41:00 -0500;
+date: 2018-01-10 19:41:00;
+lastUpdated: 2018-01-10 19:41:00;
 categories: front-end-development internet explorer browser support testing
 permalink: /front-end-development/internet-explorer
 order: 70.30

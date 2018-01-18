@@ -3,8 +3,8 @@ layout: post
 title: "Knockout.js"
 author: Zachary Winnie
 authorTitle: Senior Interface Designer
-date: 2018-01-09 19:28:00 -0500
-lastUpdated: 2018-01-09 19:28:00 -0500;
+date: 2018-01-09 19:28:00;
+lastUpdated: 2018-01-09 19:28:00;
 categories: front-end-development knockout js javascript
 permalink: /front-end-development/knockout
 order: 70.30

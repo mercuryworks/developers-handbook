@@ -3,8 +3,8 @@ layout: post
 title: "CSS"
 author: Zachary Winnie
 authorTitle: Senior Interface Designer
-date: 2018-01-10 19:24:00 -0500
-lastUpdated: 2018-01-10 19:24:00 -0500;
+date: 2018-01-10 19:24:00;
+lastUpdated: 2018-01-10 19:24:00;
 categories: front-end-development css
 permalink: /front-end-development/css
 order: 70.30

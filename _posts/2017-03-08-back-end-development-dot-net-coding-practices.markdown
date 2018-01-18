@@ -3,8 +3,8 @@ layout: post
 title: "Coding Practices"
 author: Kyle Jones
 authorTitle: Principle Application Developer
-date: 2017-03-08 07:26:00 -0500
-lastUpdated: 2017-03-08 07:26:00 -0500
+date: 2017-03-08 07:26:00;
+lastUpdated: 2017-03-08 07:26:00;
 categories: back-end-development dotnet coding-practices
 permalink: /back-end-development/dotnet/coding-practices
 order: 80.22

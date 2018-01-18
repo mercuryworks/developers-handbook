@@ -3,8 +3,8 @@ layout: post
 title: "HTML"
 author: Zachary Winnie
 authorTitle: Senior Interface Designer
-date: 2018-01-10 19:56:00 -0500
-lastUpdated: 2018-01-10 19:56:00 -0500;
+date: 2018-01-10 19:56:00;
+lastUpdated: 2018-01-10 19:56:00;
 categories: front-end-development html
 permalink: /front-end-development/html
 order: 70.30

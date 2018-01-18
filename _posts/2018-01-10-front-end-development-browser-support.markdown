@@ -3,8 +3,8 @@ layout: post
 title: "Browser Support"
 author: Zachary Winnie
 authorTitle: Senior Interface Designer
-date: 2018-01-10 19:32:00 -0500
-lastUpdated: 2018-01-10 19:32:00 -0500;
+date: 2018-01-10 19:32:00;
+lastUpdated: 2018-01-10 19:32:00;
 categories: front-end-development browser support testing
 permalink: /front-end-development/browser-support
 order: 70.30

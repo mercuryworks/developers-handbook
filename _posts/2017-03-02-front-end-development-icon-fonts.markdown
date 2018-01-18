@@ -3,8 +3,8 @@ layout: post
 title: "Icon Fonts"
 author: Zachary Winnie
 authorTitle: Senior Interface Designer
-date: 2017-03-07 17:57:00 -0500
-lastUpdated: 2017-03-07 17:57:00 -0500;
+date: 2017-03-07 17:57:00;
+lastUpdated: 2017-03-07 17:57:00;
 categories: front-end-development fonts icon-fonts
 permalink: /front-end-development/icon-fonts
 order: 70.40

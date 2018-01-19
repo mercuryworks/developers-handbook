@@ -11,6 +11,14 @@ order: 70.30
 child: true
 ---
 
+## Reset/Normalize
+
+* [Normalize.css](https://necolas.github.io/normalize.css/)
+* [Sanitize.css](https://jonathantneal.github.io/sanitize.css/)
+* [Reboot (Bootstrap)](https://getbootstrap.com/docs/4.0/content/reboot/)
+* [Reset CSS](https://meyerweb.com/eric/tools/css/reset/)
+* [Don't bother](https://css-tricks.com/normalize-css-no/)
+
 ## Vendor Prefixes
 
 Use autoprefixer (via a task runner like Gulp or Webpack) to automatically add vendor prefixes to your CSS.

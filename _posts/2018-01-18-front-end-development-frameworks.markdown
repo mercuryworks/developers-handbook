@@ -26,7 +26,19 @@ child: true
 
 * [Bootstrap v3](https://getbootstrap.com/docs/3.3/)
 
-## Others
+### Framework Integrations
+
+* [reactstrap (React Bootstrap components)](https://reactstrap.github.io/)
+* [ng-bootstrap (Angular Bootstrap components)](https://ng-bootstrap.github.io/#/home)
+* [UI Bootstrap (Angular Bootstrap components)](https://angular-ui.github.io/bootstrap/)
+* [Bootstrap + Vue](https://bootstrap-vue.js.org/)
+
+### Plugins
+
+* [Form Validation (v3 & v4)](http://formvalidation.io/)
+* [DataTables (v3 & v4)](https://datatables.net/examples/styling/bootstrap4.html)
+
+## Other Frameworks
 
 * [Office UI Fabric](https://developer.microsoft.com/en-us/fabric)
 * [Foundation](https://foundation.zurb.com/)

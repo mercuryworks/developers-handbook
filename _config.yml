@@ -31,6 +31,8 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - node_modules
+  - gulpfile.js
 highlighter: rouge
 encoding: bom|utf-8
 # https://jekyllrb.com/docs/permalinks/

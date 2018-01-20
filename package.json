@@ -1,0 +1,10 @@
+{
+  "version": "1.0.0",
+  "name": "mercurydeveloperhandbook",
+  "private": true,
+  "devDependencies": {
+    "browser-sync": "^2.23.5",
+    "gulp": "^3.9.1",
+    "gulp-shell": "^0.6.5"
+  }
+}

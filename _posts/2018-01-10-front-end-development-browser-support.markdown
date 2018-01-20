@@ -58,9 +58,9 @@ child: true
 
 ## Determining Support
 
-The above stats are just for reference. Know your target audience! Look at analytics beforehand, if possible. Some clients may need deeper browser support, such as older IE. Discuss with your PO/RM (and with Chris during estimating for sales purposes) at the start of the project.
+The above stats are just for reference. Know your target audience! Look at analytics beforehand, if possible. Some clients may need deeper browser support, such as [older Internet Explorer](/developers-handbook/front-end-development/internet-explorer). Discuss with your PO or RM at the start of the project.
 
-As a general guide, if a browser falls below 2% usage (and the trend is that its usage is falling), it is safe to not provide support for that browser. Again, discuss with your PO/RM to set proper client and Mercury expectations.
+As a general guide, if a browser falls below 2% usage (and the trend is that its usage is falling), it is safe to not provide support for that browser. Again, discuss with your PO or RM to set proper client and Mercury expectations.
 
 ## References
 

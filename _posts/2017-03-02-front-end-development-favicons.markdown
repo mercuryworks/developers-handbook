@@ -44,10 +44,5 @@ Use Real Favicon Generator to create your favicons: [Real Favicon Generator](htt
 
 ## Resources
 
-### Wikipedia
-
-Wikipedia has surprisingly good documentation on using favicons, including instructions on how to use, browser support, and history: [https://en.wikipedia.org/wiki/Favicon](https://en.wikipedia.org/wiki/Favicon).
-
-### Favicon Cheat Sheet
-
-[Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
+* [Surprising Good Favicon Docs on Wikipedia](https://en.wikipedia.org/wiki/Favicon).
+* [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)

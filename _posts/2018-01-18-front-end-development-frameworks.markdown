@@ -21,6 +21,7 @@ child: true
 ### v4
 
 * [Bootstrap v4](http://getbootstrap.com/)
+* [Documentation](http://getbootstrap.com/docs/4.0/getting-started/introduction/)
 
 ### v3
 
@@ -37,6 +38,8 @@ child: true
 
 * [Form Validation (v3 & v4)](http://formvalidation.io/)
 * [DataTables (v3 & v4)](https://datatables.net/examples/styling/bootstrap4.html)
+* [SummerNote WYSIWYG (v3 & v4)](https://summernote.org/)
+* [More Resources](https://startbootstrap.com/bootstrap-resources/)
 
 ## Other Frameworks
 

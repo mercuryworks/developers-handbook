@@ -22,15 +22,15 @@ The following books are recommended for Mercury developers and cover many of the
 
 ### Blogs
 
-* *Scott Hanselman's Computer Zen*, [http://www.hanselman.com/blog/](http://www.hanselman.com/blog/) – Scott Hanselman is a developer for the web platform team. He blogs about technology, culture, gadgets, diversity, code, and the web. 
-* *Coding Horror*, [http://www.codinghorror.com/blog/](http://www.codinghorror.com/blog/) – Rob Conery focuses on programming, performance, and human factors 
-* *InforQ*, [http://www.infoq.com/](http://www.infoq.com/) – Facilitating the spread of knowledge and innovation in enterprise software development. Topics cover languages, technology, and architecture. 
-* *Martin Fowler*, [http://martinfowler.com/bliki/](http://martinfowler.com/bliki/) – Author and speaker on software development
+* *Scott Hanselman's Computer Zen*, [http://www.hanselman.com/blog/](http://www.hanselman.com/blog/){:target="_blank"} – Scott Hanselman is a developer for the web platform team. He blogs about technology, culture, gadgets, diversity, code, and the web. 
+* *Coding Horror*, [http://www.codinghorror.com/blog/](http://www.codinghorror.com/blog/){:target="_blank"} – Rob Conery focuses on programming, performance, and human factors 
+* *InforQ*, [http://www.infoq.com/](http://www.infoq.com/){:target="_blank"} – Facilitating the spread of knowledge and innovation in enterprise software development. Topics cover languages, technology, and architecture. 
+* *Martin Fowler*, [http://martinfowler.com/bliki/](http://martinfowler.com/bliki/){:target="_blank"} – Author and speaker on software development
 
 ### Other
 
-* *Dot Net Rocks* podcast, [http://www.dotnetrocks.com/](http://www.dotnetrocks.com/) – The internet audio talk show for .Net Developers 
-* *Hansel Minutes*, [http://www.hanselminutes.com/](http://www.hanselminutes.com/) – Scott Hanselman’s podcast 
-* *Code Cast*, [http://www.code-magazine.com/codecast/](http://www.code-magazine.com/codecast/) – Podcast for Code magazine 
-* *Deep Fried Bytes*, [http://deepfriedbytes.com/](http://deepfriedbytes.com/) – Technology podcast 
-* *PluralCast*, [http://blog.pluralsight.com/pluralcast](http://blog.pluralsight.com/pluralcast) – Podcast for PluralSight training
+* *Dot Net Rocks* podcast, [http://www.dotnetrocks.com/](http://www.dotnetrocks.com/){:target="_blank"} – The internet audio talk show for .Net Developers 
+* *Hansel Minutes*, [http://www.hanselminutes.com/](http://www.hanselminutes.com/){:target="_blank"} – Scott Hanselman’s podcast 
+* *Code Cast*, [http://www.code-magazine.com/codecast/](http://www.code-magazine.com/codecast/){:target="_blank"} – Podcast for Code magazine 
+* *Deep Fried Bytes*, [http://deepfriedbytes.com/](http://deepfriedbytes.com/){:target="_blank"} – Technology podcast 
+* *PluralCast*, [http://blog.pluralsight.com/pluralcast](http://blog.pluralsight.com/pluralcast){:target="_blank"} – Podcast for PluralSight training

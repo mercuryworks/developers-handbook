@@ -23,7 +23,7 @@ child: true
 
 ## Microsoft Support Of Internet Explorer
 
-Microsoft no [longer supports Windows XP](https://www.microsoft.com/en-us/windowsforbusiness/end-of-xp-support) or [IE10 or older versions of IE](https://www.microsoft.com/en-us/windowsforbusiness/end-of-ie-support). Usage is so small for these browsers that these browsers can be ignored for clients for USA/Florida presence. Global clients (especially in emerging markets and lower income countries) should be researched thoroughly and may need older IE support. There is still prevalence of Windows XP and thus IE8 in these areas. Talk to your PO or RM when estimating for new clients or projects, as older browser support will significantly impact the cost of projects.
+Microsoft no [longer supports Windows XP](https://www.microsoft.com/en-us/windowsforbusiness/end-of-xp-support){:target="_blank"} or [IE10 or older versions of IE](https://www.microsoft.com/en-us/windowsforbusiness/end-of-ie-support){:target="_blank"}. Usage is so small for these browsers that these browsers can be ignored for clients for USA/Florida presence. Global clients (especially in emerging markets and lower income countries) should be researched thoroughly and may need older IE support. There is still prevalence of Windows XP and thus IE8 in these areas. Talk to your PO or RM when estimating for new clients or projects, as older browser support will significantly impact the cost of projects.
 
 ## Compatibility Mode
 
@@ -31,7 +31,7 @@ Microsoft no [longer supports Windows XP](https://www.microsoft.com/en-us/window
 * This mode forces IE to render as IE7, forcing a layout engine that doesn't support modern CSS features
 * Clients will often get tripped up on this and leave this setting on, which breaks the layout of modern sites
 * Some internal IT departments set Compatibility Mode to on by default for internal web app support
-* [Microsoft Edge](https://www.microsoft.com/en-us/windows/microsoft-edge) no longer has Compatibility Mode
+* [Microsoft Edge](https://www.microsoft.com/en-us/windows/microsoft-edge){:target="_blank"} no longer has Compatibility Mode
 * Refer to this [Microsoft support article about Compatibility Mode](https://support.microsoft.com/en-us/kb/2536204){:target="_blank"} for more
 
 ## Resources

@@ -40,11 +40,11 @@ Applitools is a paid service that is connected to in the functional tests which 
 
 The test is constructed in the same way as Selenium Webdriver tests, in visual studio and run with the Nunit test adapter on the Selenium Grid. 
 
-The differentiating point is that the screenshots captured use Applitools to make the comparisons.  
+The differentiating point is that the screenshots captured use Applitools to make the comparisons.
 
 One great application for this method is capturing style guides of websites to highlight any UI changes that may be encountered when making changes to the web application. 
 
-Style guides, home pages, and things like Google Maps are common places that we employ interface tests. 
+Style guides, home pages, and things like Google Maps are common places that we employ interface tests.
 
 ![Applitools 1](/assets/images/Applitools1.png)
 ![Applitools 2](/assets/images/Applitools2.png)

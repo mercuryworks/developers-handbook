@@ -13,4 +13,4 @@ child: true
 
 ## Can I Use
 
-[https://caniuse.com/#feat=svg](https://caniuse.com/#feat=svg)
+[https://caniuse.com/#feat=svg](https://caniuse.com/#feat=svg){:target="_blank"}

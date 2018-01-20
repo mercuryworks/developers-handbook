@@ -11,8 +11,8 @@ order: 70.30
 child: true
 ---
 
-* [Homepage](http://sass-lang.com/)
-* [Documentation](http://sass-lang.com/documentation)
+* [Homepage](http://sass-lang.com/){:target="_blank"}
+* [Documentation](http://sass-lang.com/documentation){:target="_blank"}
 
 ## Variables
 
@@ -195,18 +195,18 @@ map-get($colors, $primary-color);
 
 ## Mixin Libraries
 
-* [Susy Grids](http://oddbird.net/susy/)
-* [Bourbon](https://www.bourbon.io/)
-* [Neat](https://neat.bourbon.io/)
-* [Bitters](http://bitters.bourbon.io/)
-* [Refills](http://refills.bourbon.io/)
-* [Andy](http://gillesbertaux.com/andy/)
-* [Juice](http://kylebrumm.com/juice/)
-* [Family.scss](https://lukyvj.github.io/family.scss/)
+* [Susy Grids](http://oddbird.net/susy/){:target="_blank"}
+* [Bourbon](https://www.bourbon.io/){:target="_blank"}
+* [Neat](https://neat.bourbon.io/){:target="_blank"}
+* [Bitters](http://bitters.bourbon.io/){:target="_blank"}
+* [Refills](http://refills.bourbon.io/){:target="_blank"}
+* [Andy](http://gillesbertaux.com/andy/){:target="_blank"}
+* [Juice](http://kylebrumm.com/juice/){:target="_blank"}
+* [Family.scss](https://lukyvj.github.io/family.scss/){:target="_blank"}
 
 ## Resources
 
-* [SASS Guidelines](https://sass-guidelin.es/)
-* [SASS Playground](https://www.sassmeister.com/)
-* [SASS Cheatsheet](https://devhints.io/sass)
-* [Sass Functions Cheat Sheet](https://gist.github.com/AllThingsSmitty/3bcc79da563df756be46)
+* [SASS Guidelines](https://sass-guidelin.es/){:target="_blank"}
+* [SASS Playground](https://www.sassmeister.com/){:target="_blank"}
+* [SASS Cheatsheet](https://devhints.io/sass){:target="_blank"}
+* [Sass Functions Cheat Sheet](https://gist.github.com/AllThingsSmitty/3bcc79da563df756be46){:target="_blank"}

@@ -13,16 +13,16 @@ child: true
 
 ## Homepage
 
-[https://reactjs.org/](https://reactjs.org/)
+[https://reactjs.org/](https://reactjs.org/){:target="_blank"}
 
 ## Docs
-[https://reactjs.org/docs](https://reactjs.org/docs)
+[https://reactjs.org/docs](https://reactjs.org/docs){:target="_blank"}
 
 ## Browser Support
 
 ### React DOM Requirements
-[https://reactjs.org/docs/react-dom.html#browser-support](https://reactjs.org/docs/react-dom.html#browser-support)
+[https://reactjs.org/docs/react-dom.html#browser-support](https://reactjs.org/docs/react-dom.html#browser-support){:target="_blank"}
 
 ### JS Requirements
 
-[https://reactjs.org/docs/javascript-environment-requirements.html](https://reactjs.org/docs/javascript-environment-requirements.html)
+[https://reactjs.org/docs/javascript-environment-requirements.html](https://reactjs.org/docs/javascript-environment-requirements.html){:target="_blank"}

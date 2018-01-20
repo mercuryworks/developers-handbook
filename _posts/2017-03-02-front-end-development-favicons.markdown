@@ -24,7 +24,7 @@ Note: You don't really need a .ico file anymore unless you need to support Inter
 
 ## Creating Favicons
 
-Use Real Favicon Generator to create your favicons: [Real Favicon Generator](http://realfavicongenerator.net/). Suggested steps:
+Use Real Favicon Generator to create your favicons: [Real Favicon Generator](http://realfavicongenerator.net/){:target="_blank"}. Suggested steps:
 1. Create a 260x260 pixel (minimum) image, export to PNG
 2. Upload to Real Favicon Generator
 3. Adjust settings for iOS
@@ -44,5 +44,5 @@ Use Real Favicon Generator to create your favicons: [Real Favicon Generator](htt
 
 ## Resources
 
-* [Surprising Good Favicon Docs on Wikipedia](https://en.wikipedia.org/wiki/Favicon).
-* [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
+* [Surprising Good Favicon Docs on Wikipedia](https://en.wikipedia.org/wiki/Favicon){:target="_blank"}
+* [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet){:target="_blank"}

@@ -11,12 +11,8 @@ order: 70.30
 child: true
 ---
 
-## Homepage
-
-[http://knockoutjs.com/](http://knockoutjs.com/)
-
-## Docs
-[http://knockoutjs.com/documentation/introduction.html](http://knockoutjs.com/documentation/introduction.html)
+* [Homepage](http://knockoutjs.com/){:target="_blank"}
+* [Documentation](http://knockoutjs.com/documentation/introduction.html){:target="_blank"}
 
 ## Examples
 
@@ -26,9 +22,11 @@ child: true
 <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
 
 ### More Examples
-[http://knockoutjs.com/examples/](http://knockoutjs.com/examples/)
+
+[http://knockoutjs.com/examples/](http://knockoutjs.com/examples/){:target="_blank"}
 
 ## Browser Support
+
 * Firefox (current)
 * Chrome (current)
 * Edge (current)
@@ -36,5 +34,4 @@ child: true
 * Safari Mac (current)
 * Safari iOS (6+)
 * Opera (current)
-
-More: [http://knockoutjs.com/documentation/browser-support.html](http://knockoutjs.com/documentation/browser-support.html)
+* [More](http://knockoutjs.com/documentation/browser-support.html){:target="_blank"}

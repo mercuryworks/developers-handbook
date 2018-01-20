@@ -13,11 +13,11 @@ child: true
 
 ## Reset/Normalize
 
-* [Normalize.css](https://necolas.github.io/normalize.css/)
-* [Sanitize.css](https://jonathantneal.github.io/sanitize.css/)
-* [Reboot (Bootstrap)](https://getbootstrap.com/docs/4.0/content/reboot/)
-* [Reset CSS](https://meyerweb.com/eric/tools/css/reset/)
-* [Don't bother](https://css-tricks.com/normalize-css-no/)
+* [Normalize.css](https://necolas.github.io/normalize.css/){:target="_blank"}
+* [Sanitize.css](https://jonathantneal.github.io/sanitize.css/){:target="_blank"}
+* [Reboot (Bootstrap)](https://getbootstrap.com/docs/4.0/content/reboot/){:target="_blank"}
+* [Reset CSS](https://meyerweb.com/eric/tools/css/reset/){:target="_blank"}
+* [Don't bother](https://css-tricks.com/normalize-css-no/){:target="_blank"}
 
 ## Vendor Prefixes
 

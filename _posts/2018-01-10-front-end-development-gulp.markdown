@@ -13,11 +13,11 @@ child: true
 
 ## Resources
 
-* [Homepage](https://gulpjs.com/)
-* [Docs](https://github.com/gulpjs/gulp/tree/master/docs)
-* [Plugins](https://gulpjs.com/plugins/)
-* [Gulp for Beginners](https://css-tricks.com/gulp-for-beginners/)
-* [Gulpfile Generator](http://quenchjs.com/)
+* [Homepage](https://gulpjs.com/){:target="_blank"}
+* [Docs](https://github.com/gulpjs/gulp/tree/master/docs){:target="_blank"}
+* [Plugins](https://gulpjs.com/plugins/){:target="_blank"}
+* [Gulp for Beginners](https://css-tricks.com/gulp-for-beginners/){:target="_blank"}
+* [Gulpfile Generator](http://quenchjs.com/){:target="_blank"}
 
 ## Gulpfile
 

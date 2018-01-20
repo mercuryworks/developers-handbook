@@ -11,5 +11,5 @@ order: 70.40
 child: true
 ---
 ## Font Awesome 
-[http://fontawesome.io/](http://fontawesome.io/)
-[http://fontawesome.io/cheatsheet/](http://fontawesome.io/cheatsheet/)
+[http://fontawesome.io/](http://fontawesome.io/){:target="_blank"}
+[http://fontawesome.io/cheatsheet/](http://fontawesome.io/cheatsheet/){:target="_blank"}

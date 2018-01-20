@@ -14,7 +14,7 @@ child: true
 ## Picture Element
 
 ### Can I Use
-[https://caniuse.com/#feat=picture](https://caniuse.com/#feat=picture)
+[https://caniuse.com/#feat=picture](https://caniuse.com/#feat=picture){:target="_blank"}
 
 ### Picturefill Polyfill
-[https://scottjehl.github.io/picturefill/](https://scottjehl.github.io/picturefill/)
+[https://scottjehl.github.io/picturefill/](https://scottjehl.github.io/picturefill/){:target="_blank"}

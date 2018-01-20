@@ -12,21 +12,21 @@ child: true
 ---
 
 ## Color Picker Apps
-* [Sip macOS](https://sipapp.io/)
-* [Instant Eyedropper](http://instant-eyedropper.com/)
+* [Sip macOS](https://sipapp.io/){:target="_blank"}
+* [Instant Eyedropper](http://instant-eyedropper.com/){:target="_blank"}
 
 ## JS Color Pickers
-* [Huebee](http://huebee.buzz/)
-* [Kendo UI ColorPicker](https://demos.telerik.com/kendo-ui/colorpicker/index)
-* [Simple Color Picker](http://superguigui.github.io/simple-color-picker/)
-* [A Color Picker](https://github.com/narsenico/a-color-picker)
+* [Huebee](http://huebee.buzz/){:target="_blank"}
+* [Kendo UI ColorPicker](https://demos.telerik.com/kendo-ui/colorpicker/index){:target="_blank"}
+* [Simple Color Picker](http://superguigui.github.io/simple-color-picker/){:target="_blank"}
+* [A Color Picker](https://github.com/narsenico/a-color-picker){:target="_blank"}
 
 ## SASS Color
-* [Controlling color with Sass color functions](https://robots.thoughtbot.com/controlling-color-with-sass-color-functions)
-* [SASS Me](http://jim-nielsen.com/sassme/)
-* [SASS Color Generator](http://scg.ar-ch.org/)
+* [Controlling color with Sass color functions](https://robots.thoughtbot.com/controlling-color-with-sass-color-functions){:target="_blank"}
+* [SASS Me](http://jim-nielsen.com/sassme/){:target="_blank"}
+* [SASS Color Generator](http://scg.ar-ch.org/){:target="_blank"}
 
 ## Resources
-* [Brand Color](http://brand-colors.com/)
-* [Accessible color palette builder](https://toolness.github.io/accessible-color-matrix/)
-* [CSS Color Names](http://htmlcolorcodes.com/color-names/)
+* [Brand Color](http://brand-colors.com/){:target="_blank"}
+* [Accessible color palette builder](https://toolness.github.io/accessible-color-matrix/){:target="_blank"}
+* [CSS Color Names](http://htmlcolorcodes.com/color-names/){:target="_blank"}

@@ -11,20 +11,20 @@ order: 70.30
 child: true
 ---
 
-* [Atlassian Design System](https://atlassian.design/)
-* [Lightning Design System (Salesforce)](https://www.lightningdesignsystem.com/)
-* [Carbon Design System (IBM)](http://carbondesignsystem.com/)
-* [Polaris (Shopify)](https://polaris.shopify.com/)
-* [Predix](https://www.predix-ui.com/#/home)
-* [Pluralsight Design System](http://design-system.pluralsight.com/)
-* [Spark](https://sparkdesignsystem.com/)
-* [Duolingo Design](https://www.duolingo.com/design/)
-* [Snacks (Instacart)](https://instacart.github.io/Snacks/)
-* [Nachos (Trello)](https://design.trello.com/)
-* [Help Scout](http://style.helpscout.com/)
-* [Photon (Mozilla)](https://design.firefox.com/)
-* [Scooter (Dropbox)](http://dropbox.github.io/scooter/index.html)
-* [Cedar](http://rei.github.io/rei-cedar/)
-* [Clarity (VMWare)](https://vmware.github.io/clarity/)
-* [Marvel](https://marvelapp.com/styleguide/overview/introduction)
-* [MailChimp](https://ux.mailchimp.com/patterns)
+* [Atlassian Design System](https://atlassian.design/){:target="_blank"}
+* [Lightning Design System (Salesforce)](https://www.lightningdesignsystem.com/){:target="_blank"}
+* [Carbon Design System (IBM)](http://carbondesignsystem.com/){:target="_blank"}
+* [Polaris (Shopify)](https://polaris.shopify.com/){:target="_blank"}
+* [Predix](https://www.predix-ui.com/#/home){:target="_blank"}
+* [Pluralsight Design System](http://design-system.pluralsight.com/){:target="_blank"}
+* [Spark](https://sparkdesignsystem.com/){:target="_blank"}
+* [Duolingo Design](https://www.duolingo.com/design/){:target="_blank"}
+* [Snacks (Instacart)](https://instacart.github.io/Snacks/){:target="_blank"}
+* [Nachos (Trello)](https://design.trello.com/){:target="_blank"}
+* [Help Scout](http://style.helpscout.com/){:target="_blank"}
+* [Photon (Mozilla)](https://design.firefox.com/){:target="_blank"}
+* [Scooter (Dropbox)](http://dropbox.github.io/scooter/index.html){:target="_blank"}
+* [Cedar](http://rei.github.io/rei-cedar/){:target="_blank"}
+* [Clarity (VMWare)](https://vmware.github.io/clarity/){:target="_blank"}
+* [Marvel](https://marvelapp.com/styleguide/overview/introduction){:target="_blank"}
+* [MailChimp](https://ux.mailchimp.com/patterns){:target="_blank"}

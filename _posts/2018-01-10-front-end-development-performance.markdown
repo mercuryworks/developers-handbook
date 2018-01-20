@@ -13,4 +13,4 @@ child: true
 
 ## Google PageSpeed Insights
 
-[https://developers.google.com/speed/pagespeed/insights/](https://developers.google.com/speed/pagespeed/insights/)
+[https://developers.google.com/speed/pagespeed/insights/](https://developers.google.com/speed/pagespeed/insights/){:target="_blank"}

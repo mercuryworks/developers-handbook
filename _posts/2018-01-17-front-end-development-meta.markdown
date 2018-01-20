@@ -25,10 +25,11 @@ Put these two meta tags at the very top of your <code><head></code> tag:
 {% endif %}
 
 More about character encoding:
-* [HTML Encoding (Character Sets)](https://www.w3schools.com/html/html_charset.asp)
-* [Legacy Internet Explorer Document Modes](https://msdn.microsoft.com/en-us/library/jj676915(v=vs.85).aspx)
 
-##  SEO
+* [HTML Encoding (Character Sets)](https://www.w3schools.com/html/html_charset.asp){:target="_blank"}
+* [Legacy Internet Explorer Document Modes](https://msdn.microsoft.com/en-us/library/jj676915(v=vs.85).aspx){:target="_blank"}
+
+## SEO
 
 ``` html
 <title>Home | Mercury Works</title>
@@ -43,7 +44,8 @@ More about character encoding:
 {% endif %}
 
 More about meta tags for SEO:
-* [Meta tags that Google understands](https://support.google.com/webmasters/answer/79812?hl=en)
+
+* [Meta tags that Google understands](https://support.google.com/webmasters/answer/79812?hl=en){:target="_blank"}
 
 ## OpenGraph
 
@@ -61,7 +63,7 @@ More about meta tags for SEO:
 
 More about OpenGraph tags:
 * [OpenGraph Protocol](http://ogp.me/)
-* [Facebook Share  Debugger](https://developers.facebook.com/tools/debug/)
+* [Facebook Share  Debugger](https://developers.facebook.com/tools/debug/){:target="_blank"}
 
 ## Apple Meta
 
@@ -78,11 +80,13 @@ More about OpenGraph tags:
 {% endif %}
 
 More about Apple meta tags:
-* [Apple Supported Meta Tags](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html)
+
+* [Apple Supported Meta Tags](https://developer.apple.com/library/content/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html){:target="_blank"}
 
 ## Resources
-* [Hey Meta](http://www.heymeta.com/)
-* [Complete List of HTML Meta Tags](https://gist.github.com/lancejpollard/1978404)
-* [List of Usable HTML Meta and Link Tags](https://gist.github.com/kevinSuttle/1997924)
-* [Using Meta Tags in HTML: Some Basics and Best Practices](https://www.sitepoint.com/meta-tags-html-basics-best-practices/)
-* [HTML meta tags cheatsheet](https://devhints.io/html-meta)
+
+* [Hey Meta](http://www.heymeta.com/){:target="_blank"}
+* [Complete List of HTML Meta Tags](https://gist.github.com/lancejpollard/1978404){:target="_blank"}
+* [List of Usable HTML Meta and Link Tags](https://gist.github.com/kevinSuttle/1997924){:target="_blank"}
+* [Using Meta Tags in HTML: Some Basics and Best Practices](https://www.sitepoint.com/meta-tags-html-basics-best-practices/){:target="_blank"}
+* [HTML meta tags cheatsheet](https://devhints.io/html-meta){:target="_blank"}

@@ -81,7 +81,7 @@ body {
 
 ### Resources
 
-More about using @font-face: [https://css-tricks.com/snippets/css/using-font-face/](https://css-tricks.com/snippets/css/using-font-face/).
+More about using @font-face: [https://css-tricks.com/snippets/css/using-font-face/](https://css-tricks.com/snippets/css/using-font-face/){:target="_blank"}.
 
 ## Performance And Webfonts
 
@@ -95,17 +95,17 @@ You can limit your file sizes by limiting the character set.
 
 Consider using system fonts &mdash; you'll have no files to download and increase the performance of your site.
 
-More on using system fonts: [https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/](https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/).
+More on using system fonts: [https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/](https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/){:target="_blank"}.
 
 ## Converting Fonts To Webfonts
 
-[Transfonter](https://transfonter.org/)
+[Transfonter](https://transfonter.org/){:target="_blank"}
 
 ## Font Services
 
 ### Google Fonts
 
-[Google Fonts](https://fonts.google.com/)
+[Google Fonts](https://fonts.google.com/){:target="_blank"}
 
 The preferred method for using Google Fonts is by linking the stylesheet via the `<link>` tag:
 
@@ -119,7 +119,7 @@ The preferred method for using Google Fonts is by linking the stylesheet via the
 
 ### Typekit
 
-[Typekit](https://typekit.com/fonts)
+[Typekit](https://typekit.com/fonts){:target="_blank"}
 
 ## Webfonts And IIS
 

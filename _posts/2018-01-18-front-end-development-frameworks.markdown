@@ -77,6 +77,7 @@ child: true
 * [Mobi.css](http://getmobicss.com/){:target="_blank"}
 * [Funcssion](https://funcssion.com/){:target="_blank"}
 * [Skeleton](http://getskeleton.com/){:target="_blank"}
+* [Tailwind CSS](https://tailwindcss.com/){:target="_blank"}
 
 ## Resources
 

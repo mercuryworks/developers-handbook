@@ -38,6 +38,7 @@ A design system is a collection of documentation on principles and best practice
 * [Duolingo Design](https://www.duolingo.com/design/){:target="_blank"}
 * [Disqus Brand & Style Guide](https://disqus.com/pages/style-guide/){:target="_blank"}
 * [Fleet (City of Boston)](https://cob-patterns-staging.herokuapp.com/){:target="_blank"}
+* [Fluent Design System (Microsoft)](https://fluent.microsoft.com/){:target="_blank"}
 * [Frend](https://frend.co/){:target="_blank"}
 * [FutureLearn](https://www.futurelearn.com/pattern-library){:target="_blank"}
 * [Harmony (Intuit)](http://harmony.intuit.com/){:target="_blank"}

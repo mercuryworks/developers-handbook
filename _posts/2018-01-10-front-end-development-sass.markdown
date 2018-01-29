@@ -210,3 +210,7 @@ map-get($colors, $primary-color);
 * [Sass Playground](https://www.sassmeister.com/){:target="_blank"}
 * [Sass Cheatsheet](https://devhints.io/sass){:target="_blank"}
 * [Sass Functions Cheat Sheet](https://gist.github.com/AllThingsSmitty/3bcc79da563df756be46){:target="_blank"}
+* [Awesome Sass](https://github.com/Famolus/awesome-sass){:target="_blank"}
+* [Motherplate](https://github.com/leemunroe/motherplate){:target="_blank"}
+* [Scss Boilerplate](https://github.com/spatie/scss){:target="_blank"}
+* [SassDoc](http://sassdoc.com){:target="_blank"}

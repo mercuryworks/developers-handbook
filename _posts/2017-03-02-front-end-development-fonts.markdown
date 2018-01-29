@@ -121,6 +121,11 @@ The preferred method for using Google Fonts is by linking the stylesheet via the
 
 [Typekit](https://typekit.com/fonts){:target="_blank"}
 
+## Variable Fonts
+
+* [How to use variable fonts in the real world](https://medium.com/clear-left-thinking/how-to-use-variable-fonts-in-the-real-world-e6d73065a604){:target="_blank"}
+* [One File, Many Options: Using Variable Fonts on the Web](https://css-tricks.com/one-file-many-options-using-variable-fonts-web/){:target="_blank"}
+
 ## Webfonts And IIS
 
 You'll need to have IIS configured with MIME types for the font files you're using, otherwise you'll get 404 errors.

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "SASS"
+title: "Sass"
 author: Zachary Winnie
 authorTitle: Senior Interface Designer
 date: 2018-01-10 09:41:00;
@@ -152,7 +152,7 @@ $columns: 12;
 
 ## Conditionals
 
-SASS has if/else statements:
+Sass has if/else statements:
 
 ``` scss
 $border-radius: false;
@@ -206,7 +206,7 @@ map-get($colors, $primary-color);
 
 ## Resources
 
-* [SASS Guidelines](https://sass-guidelin.es/){:target="_blank"}
-* [SASS Playground](https://www.sassmeister.com/){:target="_blank"}
-* [SASS Cheatsheet](https://devhints.io/sass){:target="_blank"}
+* [Sass Guidelines](https://sass-guidelin.es/){:target="_blank"}
+* [Sass Playground](https://www.sassmeister.com/){:target="_blank"}
+* [Sass Cheatsheet](https://devhints.io/sass){:target="_blank"}
 * [Sass Functions Cheat Sheet](https://gist.github.com/AllThingsSmitty/3bcc79da563df756be46){:target="_blank"}

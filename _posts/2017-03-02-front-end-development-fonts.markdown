@@ -49,7 +49,7 @@ body {
 {% endif %}
 
 
-### SASS/SCSS
+### Sass/SCSS
 
 ``` scss
 $open-sans: 'Open Sans';
@@ -59,7 +59,7 @@ $open-sans-path: '/fonts/open-sans/';
   src:  url('#{$open-sans-path}opensans.woff2') format('woff2'),
         url('#{$open-sans-path}opensans.woff') format('woff');
 }
-// Global variable (avoid using $open-sans across your SASS code, abstract it out so it is easy to change)
+// Global variable (avoid using $open-sans across your Sass code, abstract it out so it is easy to change)
 $font-family--primary: 'Open Sans', sans-serif;
 ```
 {% if gitbook %}
@@ -67,7 +67,7 @@ $font-family--primary: 'Open Sans', sans-serif;
   <button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
 {% endif %}
 
-Using the font to style elements in SASS:
+Using the font to style elements in Sass:
 
 ``` scss
 body {

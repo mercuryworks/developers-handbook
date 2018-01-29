@@ -21,10 +21,10 @@ child: true
 * [Simple Color Picker](http://superguigui.github.io/simple-color-picker/){:target="_blank"}
 * [A Color Picker](https://github.com/narsenico/a-color-picker){:target="_blank"}
 
-## SASS Color
+## Sass Color
 * [Controlling color with Sass color functions](https://robots.thoughtbot.com/controlling-color-with-sass-color-functions){:target="_blank"}
-* [SASS Me](http://jim-nielsen.com/sassme/){:target="_blank"}
-* [SASS Color Generator](http://scg.ar-ch.org/){:target="_blank"}
+* [Sass Me](http://jim-nielsen.com/sassme/){:target="_blank"}
+* [Sass Color Generator](http://scg.ar-ch.org/){:target="_blank"}
 
 ## Resources
 * [Brand Color](http://brand-colors.com/){:target="_blank"}

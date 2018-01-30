@@ -27,7 +27,7 @@ child: true
 * [SPFX Toolchain](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/toolchain/sharepoint-framework-toolchain){:target="_blank"}
 * [Yeoman generator](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/toolchain/scaffolding-projects-using-yeoman-sharepoint-generator){:target="_blank"}
 
-## Commands
+### Commands
 
 * `gulp trust-dev-cert`
 * `gulp serve`
@@ -36,10 +36,16 @@ child: true
 * `gulp package-solution`
 * `gulp package-solution --ship`
 
-## URLs
+### URLs
 
 * [https://localhost:4321/temp/workbench.html](https://localhost:4321/temp/workbench.html){:target="_blank"}
 * [https://mercury.sharepoint.com/_layouts/workbench.aspx](https://mercury.sharepoint.com/_layouts/workbench.aspx){:target="_blank"}
+
+### Property Panes
+
+* [Make your SharePoint client-side web part configurable](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/basics/integrate-with-property-pane){:target="_blank"}
+* [Build custom controls for the property pane](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/guidance/build-custom-property-pane-controls){:target="_blank"}
+* [SharePoint Framework All Property Types](https://code.msdn.microsoft.com/office/SharePoint-Framework-All-fbc95eef#content){:target="_blank"}
 
 ## Office Fabric
 
@@ -48,3 +54,7 @@ child: true
 * [Office UI Fabric: Icons](https://developer.microsoft.com/en-us/fabric#/styles/icons){:target="_blank"}
 * [Office UI Fabric: React Components](https://developer.microsoft.com/en-us/fabric#/components){:target="_blank"}
 * [Office UI Fabric (React GitHub)](https://github.com/OfficeDev/office-ui-fabric-react){:target="_blank"}
+
+## Resources
+
+* [SharePoint SPFX GitHub Wiki](https://github.com/SharePoint/sp-dev-docs/wiki){:target="_blank"}

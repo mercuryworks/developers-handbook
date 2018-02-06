@@ -13,6 +13,12 @@ child: true
 
 A design system is a collection of documentation on principles and best practices, that helps guide a team to build digital products. They are often embodied in UI libraries and pattern libraries, but can extend to include guides on other areas such as 'Voice and Tone'.
 
+## Resources
+
+* [Design Systems Handbook](https://www.designbetter.co/design-systems-handbook){:target="_blank"}
+
+## List of Design Systems
+
 * [18F Front End Guide](https://frontend.18f.gov/){:target="_blank"}
 * [A List Apart Patterns](http://patterns.alistapart.com/){:target="_blank"}
 * [A List Apart Style Guide](http://alistapart.com/about/style-guide){:target="_blank"}
@@ -28,6 +34,7 @@ A design system is a collection of documentation on principles and best practice
 * [Blueprint](http://blueprintjs.com/){:target="_blank"}
 * [Boundless](https://boundless.js.org/){:target="_blank"}
 * [Buffer Style Guide](https://buffer.com/style-guide){:target="_blank"}
+* [Canvas (HubSpot)](https://canvas.hubspot.com/){:target="_blank"}
 * [Carbon Design System (IBM)](http://carbondesignsystem.com/){:target="_blank"}
 * [Cedar (REI)](http://rei.github.io/rei-cedar/){:target="_blank"}
 * [Chameleon](http://pusher.github.io/chameleon/){:target="_blank"}

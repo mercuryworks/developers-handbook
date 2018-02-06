@@ -29,9 +29,13 @@ child: true
 * [Sass Me](http://jim-nielsen.com/sassme/){:target="_blank"}
 * [Sass Color Generator](http://scg.ar-ch.org/){:target="_blank"}
 
+## Accessible Color
+
+* [Accessible color palette builder](https://toolness.github.io/accessible-color-matrix/){:target="_blank"}
+* [Contrast Grid](http://contrast-grid.eightshapes.com/){:target="_blank"}
+
 ## Resources
 
 * [Brand Color](http://brand-colors.com/){:target="_blank"}
 * [Brand Colors](https://brandcolors.net/){:target="_blank"}
-* [Accessible color palette builder](https://toolness.github.io/accessible-color-matrix/){:target="_blank"}
 * [CSS Color Names](http://htmlcolorcodes.com/color-names/){:target="_blank"}

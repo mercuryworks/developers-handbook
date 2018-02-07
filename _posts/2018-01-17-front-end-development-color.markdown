@@ -23,6 +23,11 @@ child: true
 * [Simple Color Picker](http://superguigui.github.io/simple-color-picker/){:target="_blank"}
 * [A Color Picker](https://github.com/narsenico/a-color-picker){:target="_blank"}
 
+## Color Extractors
+
+* [Colorify.js](http://colorify.rocks/){:target="_blank"}
+* [Adaptive Backgrounds](http://briangonzalez.github.io/jquery.adaptive-backgrounds.js/){:target="_blank"}
+
 ## Sass Color
 
 * [Controlling color with Sass color functions](https://robots.thoughtbot.com/controlling-color-with-sass-color-functions){:target="_blank"}
@@ -39,3 +44,4 @@ child: true
 * [Brand Color](http://brand-colors.com/){:target="_blank"}
 * [Brand Colors](https://brandcolors.net/){:target="_blank"}
 * [CSS Color Names](http://htmlcolorcodes.com/color-names/){:target="_blank"}
+* [.colors()](https://dotcolors.co/){:target="_blank"}

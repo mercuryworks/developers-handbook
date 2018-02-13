@@ -36,6 +36,7 @@ child: true
 * `gulp bundle --ship`
 * `gulp package-solution`
 * `gulp package-solution --ship`
+* `gulp clean`
 
 ### URLs
 

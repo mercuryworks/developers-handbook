@@ -1,11 +1,11 @@
 ---
 layout: post
-title: "SPFX"
+title: "SharePoint SPFX"
 author: Zachary Winnie
 authorTitle: Senior Interface Designer
 date: 2018-01-29 18:11:00;
-lastUpdated: 2018-01-29 18:11:00;
-categories: sharepoint intranet spfx
+lastUpdated: 2018-02-13 12:27:00;
+categories: sharepoint intranet spfx react
 permalink: /sharepoint/spfx
 order: 100.10
 child: true

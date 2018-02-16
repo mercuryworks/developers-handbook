@@ -45,3 +45,4 @@ child: true
 * [Brand Colors](https://brandcolors.net/){:target="_blank"}
 * [CSS Color Names](http://htmlcolorcodes.com/color-names/){:target="_blank"}
 * [.colors()](https://dotcolors.co/){:target="_blank"}
+* [Pigment](https://pigment.shapefactory.co/){:target="_blank"}

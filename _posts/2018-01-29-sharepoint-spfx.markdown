@@ -49,6 +49,14 @@ child: true
 * [Build custom controls for the property pane](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/guidance/build-custom-property-pane-controls){:target="_blank"}
 * [SharePoint Framework All Property Types](https://code.msdn.microsoft.com/office/SharePoint-Framework-All-fbc95eef#content){:target="_blank"}
 
+### Troubleshooting
+
+* [Maintenance mode (Add ?maintenancemode=true to URL)](https://docs.microsoft.com/en-us/sharepoint/dev/general-development/client-side-web-parts-maintenance-mode){:target="_blank"}
+
+### Dev, Staging, & Prod Via App Catalogs
+
+* [Use the site collection app catalog](https://docs.microsoft.com/en-us/sharepoint/dev/general-development/site-collection-app-catalog){:target="_blank"}
+
 ## Office Fabric
 
 * [Office UI Fabric](https://developer.microsoft.com/en-us/fabric){:target="_blank"}

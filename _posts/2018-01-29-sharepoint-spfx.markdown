@@ -48,6 +48,7 @@ child: true
 * [Make your SharePoint client-side web part configurable](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/basics/integrate-with-property-pane){:target="_blank"}
 * [Build custom controls for the property pane](https://docs.microsoft.com/en-us/sharepoint/dev/spfx/web-parts/guidance/build-custom-property-pane-controls){:target="_blank"}
 * [SharePoint Framework All Property Types](https://code.msdn.microsoft.com/office/SharePoint-Framework-All-fbc95eef#content){:target="_blank"}
+* [SharePoint Framework Property Controls](https://sharepoint.github.io/sp-dev-fx-property-controls/){:target="_blank"}
 
 ### Troubleshooting
 
@@ -64,6 +65,7 @@ child: true
 * [Office UI Fabric: Icons](https://developer.microsoft.com/en-us/fabric#/styles/icons){:target="_blank"}
 * [Office UI Fabric: React Components](https://developer.microsoft.com/en-us/fabric#/components){:target="_blank"}
 * [Office UI Fabric (React GitHub)](https://github.com/OfficeDev/office-ui-fabric-react){:target="_blank"}
+* [SharePoint Framework React Controls](https://sharepoint.github.io/sp-dev-fx-controls-react/){:target="_blank"}
 
 ## Resources
 

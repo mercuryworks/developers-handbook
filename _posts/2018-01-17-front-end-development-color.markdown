@@ -38,6 +38,9 @@ child: true
 
 * [Accessible color palette builder](https://toolness.github.io/accessible-color-matrix/){:target="_blank"}
 * [Contrast Grid](http://contrast-grid.eightshapes.com/){:target="_blank"}
+* [Colorable](http://jxnblk.com/colorable/demos/matrix/){:target="_blank"}
+* [Color Oracle](http://www.colororacle.org/){:target="_blank"}
+* [Hex Naw](https://hexnaw.com/){:target="_blank"}
 
 ## Resources
 

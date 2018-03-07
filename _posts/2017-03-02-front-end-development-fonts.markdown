@@ -11,7 +11,9 @@ order: 70.20
 child: true
 ---
 {% if gitbook %}
+
 # Fonts
+
 {% endif %}
 
 ## Browser Support
@@ -79,8 +81,6 @@ body {
   <button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
 {% endif %}
 
-### Resources
-
 More about using @font-face: [https://css-tricks.com/snippets/css/using-font-face/](https://css-tricks.com/snippets/css/using-font-face/){:target="_blank"}.
 
 ## Performance And Webfonts
@@ -95,11 +95,18 @@ You can limit your file sizes by limiting the character set.
 
 Consider using system fonts &mdash; you'll have no files to download and increase the performance of your site.
 
-More on using system fonts: [https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/](https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/){:target="_blank"}.
+```css
+font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif
+```
 
-## Converting Fonts To Webfonts
+{% if gitbook %}
+{% else %}
+  <button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
+{% endif %}
 
-[Transfonter](https://transfonter.org/){:target="_blank"}
+* [Using UI System Fonts In Web Design: A Quick Practical Guide](https://www.smashingmagazine.com/2015/11/using-system-ui-fonts-practical-guide/){:target="_blank"}.
+* [Implementing system fonts on Booking.com — A lesson learned.](https://booking.design/implementing-system-fonts-on-booking-com-a-lesson-learned-bdc984df627f){:target="_blank"}.
+* [System Font Stack](https://css-tricks.com/snippets/css/system-font-stack/){:target="_blank"}.
 
 ## Font Services
 
@@ -152,3 +159,9 @@ Instead of messing with IIS, you can also add the following declarations to the 
 {% else %}
   <button type="button" class="button button--white button--smallest button--copy">Copy Code</button>
 {% endif %}
+
+## Resources
+
+* [Transfonter](https://transfonter.org/){:target="_blank"}
+* [FontDrop!](https://fontdrop.info/){:target="_blank"}
+* [glyphhanger](https://github.com/filamentgroup/glyphhanger){:target="_blank"}

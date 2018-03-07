@@ -4,7 +4,7 @@ title: "Fonts"
 author: Zachary Winnie
 authorTitle: Senior Interface Designer
 date: 2017-03-02 10:36:00;
-lastUpdated: 2018-01-14 20:02:00;
+lastUpdated: 2018-03-07 07:43:00;
 categories: front-end-development fonts
 permalink: /front-end-development/fonts
 order: 70.20

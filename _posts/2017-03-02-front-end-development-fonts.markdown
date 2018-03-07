@@ -11,9 +11,7 @@ order: 70.20
 child: true
 ---
 {% if gitbook %}
-
 # Fonts
-
 {% endif %}
 
 ## Browser Support

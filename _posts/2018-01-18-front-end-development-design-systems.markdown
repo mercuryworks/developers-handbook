@@ -48,6 +48,7 @@ A design system is a collection of documentation on principles and best practice
 * [Fluent Design System (Microsoft)](https://fluent.microsoft.com/){:target="_blank"}
 * [Frend](https://frend.co/){:target="_blank"}
 * [FutureLearn](https://www.futurelearn.com/pattern-library){:target="_blank"}
+* [Gestalt (Pinterest)](https://pinterest.github.io/gestalt/#/){:target="_blank"}
 * [Harmony (Intuit)](http://harmony.intuit.com/){:target="_blank"}
 * [Help Scout Style Guide](http://style.helpscout.com/){:target="_blank"}
 * [Lightning Design System (Salesforce)](https://www.lightningdesignsystem.com/){:target="_blank"}

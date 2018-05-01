@@ -27,6 +27,7 @@ A design system is a collection of documentation on principles and best practice
 * [Appear Here Bloom](http://bloom.appearhere.co.uk/){:target="_blank"}
 * [Atlassian Design System](https://atlassian.design/){:target="_blank"}
 * [Audi](http://www.audi.com/ci/en/guides/user-interface/introduction.html){:target="_blank"}
+* [Australian Government Design System](https://designsystem.gov.au/){:target="_blank"}
 * [Auth0 Style Guide](https://styleguide.auth0.com/#/){:target="_blank"}
 * [Barricade Style Guide](https://styleguide.barricade.io/){:target="_blank"}
 * [BBC Global Experience Language](http://www.bbc.co.uk/gel){:target="_blank"}

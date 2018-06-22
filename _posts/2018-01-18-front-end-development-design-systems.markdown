@@ -22,6 +22,7 @@ A design system is a collection of documentation on principles and best practice
 * [18F Front End Guide](https://frontend.18f.gov/){:target="_blank"}
 * [A List Apart Patterns](http://patterns.alistapart.com/){:target="_blank"}
 * [A List Apart Style Guide](http://alistapart.com/about/style-guide){:target="_blank"}
+* [Alfa-Bank](https://design.alfabank.ru/){:target="_blank"}
 * [Alta (Oracle)](http://www.oracle.com/webfolder/ux/middleware/alta/index.html){:target="_blank"}
 * [Ant Design (Alibaba)](https://ant.design/){:target="_blank"}
 * [Appear Here Bloom](http://bloom.appearhere.co.uk/){:target="_blank"}
@@ -69,10 +70,12 @@ A design system is a collection of documentation on principles and best practice
 * [Plasma (WeWork)](http://plasma.guide/){:target="_blank"}
 * [Polaris (Shopify)](https://polaris.shopify.com/){:target="_blank"}
 * [Predix](https://www.predix-ui.com/#/home){:target="_blank"}
+* [Priceline One](https://pricelinelabs.github.io/design-system/){:target="_blank"}
 * [Primer (GitHub)](https://primer.github.io/){:target="_blank"}
 * [Pluralsight Design System](http://design-system.pluralsight.com/){:target="_blank"}
 * [Purple (Heroku)](http://purple.herokuapp.com/){:target="_blank"}
 * [Rambler](http://ui-kit.rambler.ru/#/components){:target="_blank"}
+* [Rebass](http://jxnblk.com/rebass/){:target="_blank"}
 * [Ring (JetBrains)](http://www.jetbrains.org/ring-ui/index.html){:target="_blank"}
 * [Scooter (Dropbox)](http://dropbox.github.io/scooter/index.html){:target="_blank"}
 * [ServiceNow Design System](http://styleguide.servicenow.com/#!/){:target="_blank"}
@@ -85,6 +88,8 @@ A design system is a collection of documentation on principles and best practice
 * [University of Melborne](https://web.unimelb.edu.au/){:target="_blank"}
 * [U.S. Web Design Standards](https://standards.usa.gov/){:target="_blank"}
 * [uStyle (uSwitch)](https://ustyle.guide/){:target="_blank"}
+* [Vue Design System Builder](https://vueds.com){:target="_blank"}
 * [Wonderbly Design System](http://design-system.lostmy.name/){:target="_blank"}
 * [Yelp Styleguide](http://yelp.com/styleguide){:target="_blank"}
+* [Zendesk Garden](https://garden.zendesk.com/){:target="_blank"}
 * [Zuto](https://styleguide.zuto.com/){:target="_blank"}

@@ -2,7 +2,7 @@
 layout: post
 title: ".NET"
 author: Kyle Jones
-authorTitle: Principle Application Developer
+authorTitle: Principal Application Developer
 date: 2017-03-08 07:26:00;
 lastUpdated: 2017-03-08 07:26:00;
 categories: back-end-development dotnet
